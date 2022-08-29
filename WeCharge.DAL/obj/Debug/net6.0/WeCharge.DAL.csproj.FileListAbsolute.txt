@@ -1,0 +1,15 @@
+D:\Rees\SWork\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.deps.json
+D:\Rees\SWork\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.dll
+D:\Rees\SWork\WeCharge.DAL\bin\Debug\net6.0\ref\WeCharge.DAL.dll
+D:\Rees\SWork\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.pdb
+D:\Rees\SWork\WeCharge.DAL\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Rees\SWork\WeCharge.DAL\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.AssemblyReference.cache
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.AssemblyInfoInputs.cache
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.AssemblyInfo.cs
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.CoreCompileInputs.cache
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.CopyComplete
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.dll
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\ref\WeCharge.DAL.dll
+D:\Rees\SWork\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.pdb

@@ -1,0 +1,11 @@
+D:\Rees\SWork\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.deps.json
+D:\Rees\SWork\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Rees\SWork\WeCharge.Model\bin\Debug\net6.0\ref\WeCharge.Model.dll
+D:\Rees\SWork\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfoInputs.cache
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfo.cs
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.CoreCompileInputs.cache
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
+D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KY5sD0dJRfiy36UzMXe7q6Nj/MAS9ghxyFnq1xWwjpBkhga0n8uPe1+hOMRnkxq8w5OL4EZf8WJoCjIgtisauA==",
+  "success": true,
+  "projectFilePath": "D:\\Rees\\SWork\\WeCharge.Model\\WeCharge.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kumarr\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\kumarr\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512"
+  ],
+  "logs": []
+}
