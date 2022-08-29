@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3T1VHO1dOz2GPwOkgAGvnkzBgkH6th7LvqFIEqZl8e3fQ+h+9ka2t0TbELu9vSN5ypjjJK6KZzwpCYXoOlmFZg==",
+  "dgSpecHash": "C1FXegN0NANsJ7oek3jWwacV//aBZUVx8D9JNPCiy0URXyOqVHeyXyc9dzsAEhEjqvVxu65ZLSil1NH0vqXHxw==",
   "success": true,
-  "projectFilePath": "D:\\Rees\\SWork\\WeCharge.DAL\\WeCharge.DAL.csproj",
+  "projectFilePath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kumarr\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\kumarr\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
