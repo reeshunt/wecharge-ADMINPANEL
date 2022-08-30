@@ -32,6 +32,11 @@ namespace WeCharge.BAL.Services.Interface
              return (List<Users>)await _repository.GetAllAsync().ConfigureAwait(false);
         }
 
+        public async Task<Users> GetById(int iD)
+        {
+            return await _repository.GetByIdAsync(iD);
+        }
+
         public async Task<Users> GetByQuerry(string procedureName, DynamicParameters param)
         {
             return await _repository.GetByQuery(procedureName, param).ConfigureAwait(false);
@@ -40,6 +45,11 @@ namespace WeCharge.BAL.Services.Interface
         public async Task<IEnumerable<UsersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
         {
             return await _viewrepository.GetAllByQuery(procedureName, param).ConfigureAwait(false);
+        }
+
+        public async Task<bool> UpdateVendor(Users users)
+        {
+            return await _repository.UpdateAsync(users);
         }
     }
 }

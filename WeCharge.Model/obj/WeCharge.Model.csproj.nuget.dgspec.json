@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {}
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {}
   },
   "projects": {
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
-        "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
-        "outputPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +43,10 @@
             "Dapper.Contrib": {
               "target": "Package",
               "version": "[2.0.78, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

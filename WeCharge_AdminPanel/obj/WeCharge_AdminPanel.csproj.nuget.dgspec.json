@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {}
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {}
   },
   "projects": {
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "projectUniqueName": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
         "projectName": "WeCharge.BAL",
-        "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
-        "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
-        "outputPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
+        "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
-                "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
+              "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+                "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
               },
-              "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -62,7 +58,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,25 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "projectUniqueName": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
         "projectName": "WeCharge.DAL",
-        "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
-        "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
-        "outputPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+        "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -138,7 +131,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -147,25 +141,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
-        "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
-        "outputPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -194,6 +184,10 @@
             "Dapper.Contrib": {
               "target": "Package",
               "version": "[2.0.78, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -202,7 +196,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -211,25 +206,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {
+    "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+        "projectUniqueName": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
         "projectName": "WeCharge_AdminPanel",
-        "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
-        "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
-        "outputPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+        "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -243,8 +234,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
-                "projectPath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+              "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+                "projectPath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
               }
             }
           }
@@ -290,7 +281,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -302,7 +294,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "MZMoeplYuXTbYUufMND5a8q97HLNgSDLBJaFKRiQzB4w4TS/u570MvLfoMA4HeEcBZB5JJHxpDT4mAgJcZx4ng==",
+  "dgSpecHash": "4p9KZX3RwY/VpShpJKKByrry9FjlcR1JZIcrqoVWYqznif4Rc5WUmqHCYzCXF93sus9r7tTTI/JkZrhgcYKJhQ==",
   "success": true,
-  "projectFilePath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+  "projectFilePath": "D:\\Projects\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kumarr\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
-    "C:\\Users\\kumarr\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512"
+    "C:\\Users\\91875\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\91875\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\91875\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "C:\\Users\\91875\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\91875\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
   ],
   "logs": []
 }

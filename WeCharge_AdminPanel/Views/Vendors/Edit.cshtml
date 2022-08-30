@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+@model UsersViewModel
+<div class="content">
+    <div class="container-fluid">
+        <div class="card-header">
+            <h3 class="card-title"><b>EditVendor<b></h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Add" asp-controller="Vendors" autocomplete="off">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="FULL_NAME">Name</label>
+                    <input asp-for="FULL_NAME" type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+                    <span asp-validation-for="FULL_NAME" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EMAIL">Email</label>
+                    <input asp-for="EMAIL" type="email" class="form-control" id="email" placeholder="Enter your Email">
+                    <span asp-validation-for="EMAIL" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MOBILE_NO">Mobile</label>
+                    <input asp-for="MOBILE_NO" type="tel" class="form-control" id="mobile" placeholder="Enter your Mobile No.">
+                    <span asp-validation-for="MOBILE_NO" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 mt-2">
+                        <input type="submit" value="Update" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
