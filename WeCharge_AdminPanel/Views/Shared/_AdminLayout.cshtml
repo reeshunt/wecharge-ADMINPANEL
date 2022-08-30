@@ -121,7 +121,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user-alt"></i>
               <p>
                 User
@@ -137,6 +137,23 @@
               </li>
               <li class="nav-item">
                 <a href='@Url.Action("View","User")' class="nav-link ">
+                  <i class="far fa-list nav-icon"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-sitemap"></i>
+              <p>
+                Assets
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Assets","User")' class="nav-link ">
                   <i class="far fa-list nav-icon"></i>
                   <p>View</p>
                 </a>
