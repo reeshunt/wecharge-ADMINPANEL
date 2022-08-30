@@ -10,9 +10,11 @@ namespace WeCharge_AdminPanel.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IAccountServices _accountServices;
-        public UserController(ILogger<HomeController> logger, IAccountServices accountServices)
+        private readonly IAssetServices _assetServices;
+        public UserController(ILogger<HomeController> logger, IAccountServices accountServices,IAssetServices assetServices)
         {
             _accountServices = accountServices;
+            _assetServices = assetServices;
             _logger = logger;
         }
 
@@ -27,8 +29,14 @@ namespace WeCharge_AdminPanel.Controllers
             userData = await _accountServices.GetAll().ConfigureAwait(false);
             return View(userData);
         }
-        
+        public async Task<IActionResult> Assets()
+        {
+            List<Assets> data = new List<Assets>();
+            data = await _assetServices.GetAll().ConfigureAwait(false);
+            return View(data);
+        }
 
-       
+
+
     }
 }

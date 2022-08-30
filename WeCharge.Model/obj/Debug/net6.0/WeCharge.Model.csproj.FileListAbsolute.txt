@@ -9,3 +9,15 @@ D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.CoreCompileI
 D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
 D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
 D:\Rees\SWork\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.deps.json
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\ref\WeCharge.Model.dll
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.AssemblyReference.cache
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfoInputs.cache
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfo.cs
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.CoreCompileInputs.cache
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
+D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb

@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IConnectionFactory, ConnectionFactory>();
 builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IAccountServices, AccountServices>();
+builder.Services.AddScoped<IAssetServices, AssetServices>();
 
 var app = builder.Build();
 

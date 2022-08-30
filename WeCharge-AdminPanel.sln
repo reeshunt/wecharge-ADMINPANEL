@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeCharge.DAL", "WeCharge.DA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeCharge.Model", "WeCharge.Model\WeCharge.Model.csproj", "{CCCA6FDC-0BF5-43E8-868A-E197280B7097}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeCharge_AdminPanel", "WeCharge_AdminPanel\WeCharge_AdminPanel.csproj", "{FB2343ED-838F-4A80-B9DA-9A12D6B56BB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CCCA6FDC-0BF5-43E8-868A-E197280B7097}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCCA6FDC-0BF5-43E8-868A-E197280B7097}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCCA6FDC-0BF5-43E8-868A-E197280B7097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2343ED-838F-4A80-B9DA-9A12D6B56BB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2343ED-838F-4A80-B9DA-9A12D6B56BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2343ED-838F-4A80-B9DA-9A12D6B56BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2343ED-838F-4A80-B9DA-9A12D6B56BB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
