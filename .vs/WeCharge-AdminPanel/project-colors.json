@@ -20,7 +20,12 @@
       "ProjectGuid": "ccca6fdc-0bf5-43e8-868a-e197280b7097",
       "DisplayName": "WeCharge.Model",
       "ColorIndex": 3
+    },
+    "fb2343ed-838f-4a80-b9da-9a12d6b56bb4": {
+      "ProjectGuid": "fb2343ed-838f-4a80-b9da-9a12d6b56bb4",
+      "DisplayName": "WeCharge_AdminPanel",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

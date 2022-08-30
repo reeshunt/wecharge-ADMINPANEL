@@ -1,0 +1,96 @@
+﻿
+@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a type="button" href=/Vendors/Add class="accent-blue">Add</a>
+
+<div class="table-responsive">
+                    <table id="tblVendors" class="table dt-responsive nowrap">
+                        <thead>
+                            <tr>
+                                 <th>FULL_NAME </th>
+                                 <th>MOBILE_NO </th>
+                                 <th>EMAIL</th>
+                                 <th>IMAGE_PATH </th>
+                                 <th>Action </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                
+
+<script>
+
+</script>
+@section scripts {
+    <script src="~/JS/Jquery.min.js"></script> 
+    <script src="~/JS/Manage-Vendors.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+}
+@*<script>
+    $(document).ready(function () {
+
+    $("#Refresh").click(function (e) {
+        $('#tblVendors').DataTable().ajax.reload(null, false);
+    });
+
+    var table = $('#tblVendors')
+        .DataTable({
+            "sAjaxSource": `/Vendors/GetAllVendors/`,
+            "bServerSide": true,
+            "bProcessing": true,
+            "responsive": true,
+            "bSearchable": true,
+            "ordering": false,
+            "searching": true,
+            "lengthChange": true,
+            "order": [[0, 'asc']],
+            "language": {
+                "emptyTable": "No record found.",
+                "processing":
+                    '<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color:#2a2b2b;"></i><span class="sr-only">Loading...</span> '
+            },
+            "columns": [
+                {
+                    "data": "fULL_NAME",
+                    "autoWidth": true,
+                    "searchable": false
+                },
+                {
+                    "data": "mOBILE_NO",
+                    "autoWidth": true,
+                    "searchable": false
+                },
+                {
+                    "data": "eMAIL",
+                    "autoWidth": true,
+                    "searchable": false
+                },
+                {
+                    "data": "iMAGE_PATH",
+                    "autoWidth": true,
+                    "searchable": false
+                },
+                {
+                    "orderable": false,
+                    "autoWidth": true,
+                    render: function (data, type, row) {
+                        return `<div>
+                                    <button type="button" class="btn btn-sm btn-info mr-2 btnEdit" data-key="${row.pid}">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-danger btnDelete" data-key="${row.pid}">Delete</button>
+                                </div>`;
+                    }
+                },
+            ],
+
+            "columnDefs": [
+                { "width": "50%", "targets": [1] }
+            ],
+        });
+});
+
+</script>
+*@

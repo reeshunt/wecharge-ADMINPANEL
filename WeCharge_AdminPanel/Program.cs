@@ -2,15 +2,19 @@ using WeCharge.BAL.Services.Implementation;
 using WeCharge.BAL.Services.Interface;
 using WeCharge.DAL.Connection;
 using WeCharge.DAL.Repository;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IConnectionFactory, ConnectionFactory>();
 builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IAccountServices, AccountServices>();
 builder.Services.AddScoped<IAssetServices, AssetServices>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

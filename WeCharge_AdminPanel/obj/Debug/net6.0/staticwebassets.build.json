@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gG54YJSBudZPD21OMChidUK9zhG3YFKSsvnrAkr/xsc=",
+  "Hash": "Gb5l37pH1urLsiCNS8WP5XlCLIn3rX5qD/AUYBiKWXY=",
   "Source": "WeCharge_AdminPanel",
   "BasePath": "_content/WeCharge_AdminPanel",
   "Mode": "Default",
@@ -1290,6 +1290,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\JS\\Jquery.min.js",
+      "SourceId": "WeCharge_AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\",
+      "BasePath": "_content/WeCharge_AdminPanel",
+      "RelativePath": "JS/Jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\JS\\Jquery.min.js"
+    },
+    {
+      "Identity": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\JS\\Manage-Vendors.js",
+      "SourceId": "WeCharge_AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\",
+      "BasePath": "_content/WeCharge_AdminPanel",
+      "RelativePath": "JS/Manage-Vendors.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\JS\\Manage-Vendors.js"
     },
     {
       "Identity": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
