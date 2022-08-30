@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7bf648bb-816d-46ab-8f06-4311db7ea47c": {
+      "ProjectGuid": "7bf648bb-816d-46ab-8f06-4311db7ea47c",
+      "DisplayName": "WeCharge_AdminPanel",
+      "ColorIndex": 0
+    },
+    "adf31860-ed29-4c45-9078-9f4b88d7194e": {
+      "ProjectGuid": "adf31860-ed29-4c45-9078-9f4b88d7194e",
+      "DisplayName": "WeCharge.BAL",
+      "ColorIndex": 1
+    },
+    "10244cdd-83fc-4ee5-aaeb-4b07f8aa8d65": {
+      "ProjectGuid": "10244cdd-83fc-4ee5-aaeb-4b07f8aa8d65",
+      "DisplayName": "WeCharge.DAL",
+      "ColorIndex": 2
+    },
+    "ccca6fdc-0bf5-43e8-868a-e197280b7097": {
+      "ProjectGuid": "ccca6fdc-0bf5-43e8-868a-e197280b7097",
+      "DisplayName": "WeCharge.Model",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
