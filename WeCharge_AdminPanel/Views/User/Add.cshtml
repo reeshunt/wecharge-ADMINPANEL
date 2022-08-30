@@ -1,0 +1,45 @@
+﻿@using WeCharge.Model
+@{
+Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+@model Users
+<div class="content">
+   <div class="container-fluid">
+         <div class="card-header">
+            <h3 class="card-title"><b>Add New User<b></h3>
+         </div>
+      <div class="card-body">
+          <form>
+             <div class="row">
+                <div class="col-sm">
+                    <label for="name">Name</label>
+                    <input asp-for="@Model.FULL_NAME" type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+                </div>
+                <div class="col-sm">
+                    <label for="email">Email</label>
+                    <input asp-for="@Model.EMAIL" type="email" class="form-control" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="col-sm">
+                    <label for="email">Mobile</label>
+                    <input asp-for="@Model.MOBILE_NO" type="tel" class="form-control" id="mobile" placeholder="Enter your Mobile No.">
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="exampleInputPassword1">Role</label>
+                        <select  asp-for="@Model.ROLE_ID" class="form-control">
+                            <option value="1">Individual</option>
+                            <option value="2">Corporate</option>
+                            <option value="3">Supplier</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mt-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+          </form>
+      </div>
+   </div>
+</div>
