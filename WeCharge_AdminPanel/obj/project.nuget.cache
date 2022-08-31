@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X1aVDd7XGeUa8cINtxEtXAGV1QBk9aBCCqrMbM2flp7SMyecYP+xgKNaIOTCsQIjP6efpzm80wSSS71SJ+WCIA==",
+  "dgSpecHash": "9fiMLE/5i6wxsWlbDb76IPZGwf7zj28nt26IvMJsaN0VHv8mcLs7UQVJAVOhF53eheveMcAl0GzyVSBOhTBPUg==",
   "success": true,
-  "projectFilePath": "D:\\Rees\\SWork\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+  "projectFilePath": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kumarr\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\kumarr\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
