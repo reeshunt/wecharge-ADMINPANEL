@@ -24,6 +24,10 @@ namespace WeCharge_AdminPanel.Controllers
         {
             return View();
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
 
         /// <summary>
         /// Get list of vendors by JSON

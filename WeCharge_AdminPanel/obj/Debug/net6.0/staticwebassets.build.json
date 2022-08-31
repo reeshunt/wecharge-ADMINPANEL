@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W5hMaQd1ugsGIDkYeo0vXHnMQMFdCmo1xxJEOYoWE5M=",
+  "Hash": "L2Lo1kbDJptvAkrf7410+zGOOPWTN0wJdto0vdDAJfw=",
   "Source": "WeCharge_AdminPanel",
   "BasePath": "_content/WeCharge_AdminPanel",
   "Mode": "Default",
@@ -542,6 +542,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\css\\datatables\\jquery.dataTables.min.css"
+    },
+    {
+      "Identity": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\dist\\css\\Select2\\select2.min.css",
+      "SourceId": "WeCharge_AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\",
+      "BasePath": "_content/WeCharge_AdminPanel",
+      "RelativePath": "dist/css/Select2/select2.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\css\\Select2\\select2.min.css"
     },
     {
       "Identity": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\dist\\img\\AdminLTELogo.png",
@@ -1290,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\js\\pages\\dashboard3.js"
+    },
+    {
+      "Identity": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\dist\\js\\Select2\\select2.min.js",
+      "SourceId": "WeCharge_AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\",
+      "BasePath": "_content/WeCharge_AdminPanel",
+      "RelativePath": "dist/js/Select2/select2.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\js\\Select2\\select2.min.js"
     },
     {
       "Identity": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\favicon.ico",

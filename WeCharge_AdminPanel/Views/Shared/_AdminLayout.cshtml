@@ -16,6 +16,7 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="~/dist/css/datatables/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="~/dist/css/select2/select2.min.css">
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -192,6 +193,12 @@
                   <p>View</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href='@Url.Action("Create","Orders")' class="nav-link ">
+                  <i class="far fa-plus nav-icon"></i>
+                  <p>Create</p>
+                </a>
+              </li>
             </ul>
           </li>
            <li class="nav-item">
@@ -281,6 +288,7 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="~/dist/js/pages/dashboard3.js"></script>
 <script src="~/dist/js/datatables/jquery.dataTables.min.js"></script>
+<script src="~/dist/js/select2/select2.min.js"></script>
 
 @await RenderSectionAsync("Scripts", required: false)
 </html>

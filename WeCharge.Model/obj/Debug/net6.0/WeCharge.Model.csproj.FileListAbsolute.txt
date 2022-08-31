@@ -44,3 +44,4 @@ D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb
+D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.AssemblyReference.cache
