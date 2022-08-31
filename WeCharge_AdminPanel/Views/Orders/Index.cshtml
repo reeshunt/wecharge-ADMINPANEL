@@ -1,7 +1,11 @@
 ﻿@{
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
-
+<div class="row">
+    <div class="col-sm-12 mb-3">
+        <a class="btn btn-success float-right" href="@Url.Action("Create","Orders")">Create</a>
+    </div>
+</div>
 <div class="table-responsive">
     <table id="tblOrders" class="table dt-responsive nowrap">
         <thead>

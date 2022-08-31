@@ -1,0 +1,66 @@
+﻿@using WeCharge.Model
+@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+@model Assets
+
+<div class="content">
+   <div class="container-fluid">
+         <div class="card-header">
+            <h3 class="card-title"><b>Add New Asset<b></h3>
+         </div>
+      <div class="card-body">
+          <form asp-action="CreateAsset" autocomplete="off">
+              <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             @*<div class="form-group">*@
+                 @if (ViewBag.UsersList != null)
+			{
+				<div class="form-group" id="ddlUsers">
+					<label class="control-label">Users</label>
+					<select asp-for="USER_ID" class="form-control" asp-items="ViewBag.UsersList">
+						<option value="">--Select User--</option>
+					</select>
+					<span asp-validation-for="USER_ID" class="text-danger"></span>
+				</div>
+			}
+                <div class="form-group">
+                    <label asp-for="EQUIPMENT_NAME">Name</label>
+                    <input asp-for="EQUIPMENT_NAME" type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+                    <span asp-validation-for="EQUIPMENT_NAME" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EMAIL">Email</label>
+                    <input asp-for="EMAIL" type="email" class="form-control" id="email" placeholder="Enter your Email">
+                    <span asp-validation-for="EMAIL" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MOBILE_NO">Mobile</label>
+                    <input asp-for="MOBILE_NO" type="tel" class="form-control" id="mobile" placeholder="Enter your Mobile No.">
+                    <span asp-validation-for="MOBILE_NO" class="text-danger"></span>
+                </div>
+                @*</div>*@
+                
+				<div class="form-group" id="ddlFuelType">
+					<label class="control-label">Fuel Type</label>
+					<select asp-for="FUEL_TYPE_ID" class="form-control" asp-items="Html.GetEnumSelectList<FuelType>()">
+						<option value="">--Select Type--</option>
+					</select>
+					<span asp-validation-for="FUEL_TYPE_ID" class="text-danger"></span>
+				</div>
+			
+                <div class="form-group">
+                    <div class="col-sm-4 mt-2">
+                        <input type="hidden" asp-for="ID" />
+                        <input type="submit" class="btn btn-primary"></input>
+                        <a class="btn btn-primary" asp-action="Assets">Cancel</a>
+                    </div>
+                </div>
+          </form>
+      </div>
+   </div>
+</div>
+@section Scripts {
+    @{
+	await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

@@ -19,9 +19,43 @@ namespace WeCharge.BAL.Services.Interface
             _repository = repository;
         }
 
+        public async Task<int> AddAssets(Assets assets)
+        {
+            try
+            {
+                return await _repository.AddAsync(assets);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<bool> DeleteAssets(Assets assets)
+        {
+            try
+            {
+                bool result = await _repository.UpdateAsync(assets).ConfigureAwait(false);
+                return result;
+            }
+            catch(Exception ex) { throw ex; }
+        }
+
         public async Task<List<Assets>> GetAll()
         {
              return (List<Assets>)await _repository.GetAllAsync().ConfigureAwait(false);
+        }
+
+        public async Task<Assets> GetByID(int? id)
+        {
+            try
+            {
+                return await _repository.GetByIdAsync(id).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public async Task<Assets> GetByQuerry(string procedureName, DynamicParameters param)
@@ -29,6 +63,14 @@ namespace WeCharge.BAL.Services.Interface
             return await _repository.GetByQuery(procedureName, param).ConfigureAwait(false);
         }
 
-
+        public async Task<bool> UpdateAssets(Assets assets)
+        {
+            try
+            {
+                bool result = await _repository.UpdateAsync(assets).ConfigureAwait(false);
+                return result;
+            }
+            catch (Exception ex) { throw ex; }
+        }
     }
 }
