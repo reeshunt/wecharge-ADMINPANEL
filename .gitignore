@@ -1,2 +1,8 @@
 WeCharge_AdminPanel/obj/*
 WeCharge_AdminPanel/bin/*
+WeCharge.BAL/obj/*
+WeCharge.BAL/bin/*
+WeCharge.DAL/obj/*
+WeCharge.DAL/bin/*
+WeCharge.Model/obj/*
+WeCharge.Model/bin/*
