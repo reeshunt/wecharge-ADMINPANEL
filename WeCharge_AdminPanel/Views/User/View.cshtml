@@ -1,12 +1,31 @@
 ﻿@{
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
+<div class="row">
+
+    @*<div class="col-sm-3">
+        <label>Filter By Vendor</label>
+        <select class="form-control select2-dropdown">
+        </select>
+    </div>
+    <div class="col-sm-3 offset-1">
+        <label>Filter By Status</label>
+        <select class="form-control select2-dropdown">
+        </select>
+    </div>
+    <div class="col-sm-2 ml-4 mt-4">
+        <button class="btn btn-primary">Filter</button>
+    </div>*@
+</div>
 <section class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
+                         <div class="col-sm-12 mb-3">
+                            <a class="btn btn-success float-right" href="@Url.Action("Add","User")">Create</a>
+                        </div>
                         <h3 class="card-title">Users List</h3>
                     </div>
 

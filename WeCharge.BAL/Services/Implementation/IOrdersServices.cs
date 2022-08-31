@@ -11,5 +11,6 @@ namespace WeCharge.BAL.Services.Implementation
     public interface IOrdersServices
     {
         Task<IEnumerable<OrdersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param);
+        Task<DashboardCountDTO> GetDashboardCount(string procedureName, DynamicParameters param);
     }
 }
