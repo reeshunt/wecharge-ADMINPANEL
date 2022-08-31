@@ -5,6 +5,7 @@ using WeCharge_AdminPanel.Models;
 using System.Linq;
 using AutoMapper;
 using WeCharge.Model;
+using Microsoft.DotNet.MSIdentity.Shared;
 
 namespace WeCharge_AdminPanel.Controllers
 {
@@ -25,8 +26,9 @@ namespace WeCharge_AdminPanel.Controllers
         /// Get List of vendors
         /// </summary>
         /// <returns></returns>
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            ViewBag.VendorName = await _accountServices.GetAll();
             return View();
         }
 
@@ -103,6 +105,7 @@ namespace WeCharge_AdminPanel.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
             try
@@ -111,6 +114,7 @@ namespace WeCharge_AdminPanel.Controllers
                 if (getUserData != null)
                 {
                     var proMap = _mapper.Map<UsersViewModel>(getUserData);
+                   // return Redirect(Url.Action("Edit", "Vendors"));
                     return View(proMap);
                 }
                 return RedirectToAction("Index");

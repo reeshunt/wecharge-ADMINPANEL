@@ -15,6 +15,7 @@
         public int AgentSubdomainId { get; set; }
         public int PropertyId { get; set; }
         public string UserId { get; set; }
+        public string userName { get; set; }
         public int RecentListing { get; set; }
 
     }
