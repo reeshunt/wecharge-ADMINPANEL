@@ -37,7 +37,6 @@ D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.dll
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\ref\WeCharge.Model.dll
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.pdb
-D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.AssemblyReference.cache
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.GeneratedMSBuildEditorConfig.editorconfig
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfoInputs.cache
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfo.cs

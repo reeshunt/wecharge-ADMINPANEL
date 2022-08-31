@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 using WeCharge.BAL.Services.Implementation;
 using WeCharge.Model;
@@ -11,7 +13,7 @@ namespace WeCharge_AdminPanel.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IAccountServices _accountServices;
         private readonly IAssetServices _assetServices;
-        public UserController(ILogger<HomeController> logger, IAccountServices accountServices,IAssetServices assetServices)
+        public UserController(ILogger<HomeController> logger, IAccountServices accountServices, IAssetServices assetServices)
         {
             _accountServices = accountServices;
             _assetServices = assetServices;
@@ -41,17 +43,17 @@ namespace WeCharge_AdminPanel.Controllers
             else
             {
                 Assets assets = await _assetServices.GetByID(id).ConfigureAwait(false);
-                if(assets == null)
+                if (assets == null)
                     return NotFound();
                 else
-                    return View("CreateAsset",assets);
+                    return View("CreateAsset", assets);
             }
         }
         [HttpPost]
         public async Task<IActionResult> CreateAsset(Assets assets)
         {
             if (!ModelState.IsValid) return RedirectToAction("CreateAsset");
-            
+
             if (assets.ID == null)
             {
                 assets.CREATED_DATE = DateTime.Now;
@@ -91,17 +93,18 @@ namespace WeCharge_AdminPanel.Controllers
         {
             Assets assets = await _assetServices.GetByID(id).ConfigureAwait(false);
             bool result = false;
-            if(assets != null)
+            if (assets != null)
             {
-                assets.IS_ACTIVE=false;
+                assets.IS_ACTIVE = false;
                 assets.MODIFIED_DATE = DateTime.Now;
                 assets.MODIFIED_BY = "1";
                 result = await _assetServices.DeleteAssets(assets).ConfigureAwait(false);
             }
-            
+
             return RedirectToAction("Assets");
-            
 
 
+
+        }
     }
 }

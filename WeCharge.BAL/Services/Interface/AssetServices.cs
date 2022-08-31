@@ -46,11 +46,31 @@ namespace WeCharge.BAL.Services.Interface
              return (List<Assets>)await _repository.GetAllAsync().ConfigureAwait(false);
         }
 
+        public async Task<Assets> GetByID(int? id)
+        {
+            try
+            {
+                return await _repository.GetByIdAsync(id).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<Assets> GetByQuerry(string procedureName, DynamicParameters param)
         {
             return await _repository.GetByQuery(procedureName, param).ConfigureAwait(false);
         }
 
-
+        public async Task<bool> UpdateAssets(Assets assets)
+        {
+            try
+            {
+                bool result = await _repository.UpdateAsync(assets).ConfigureAwait(false);
+                return result;
+            }
+            catch (Exception ex) { throw ex; }
+        }
     }
 }

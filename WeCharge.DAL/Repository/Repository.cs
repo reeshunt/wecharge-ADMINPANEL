@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WeCharge.DAL.Connection;
+using WeCharge.Model;
 using WeCharge.Model.Common;
 
 namespace WeCharge.DAL.Repository
@@ -44,14 +45,14 @@ namespace WeCharge.DAL.Repository
             }
         }
 
-        public async Task<T> GetByIdAsync(int pid)
+        public async Task<T> GetByIdAsync(int? pid)
         {
             using (IDbConnection conn = new SqlConnection(_connectionFactory.GetConnectionString()))
             {
                 return await conn.GetAsync<T>(pid);
             }
         }
-
+        
         public async Task<bool> UpdateAsync(T entity)
         {
             using (IDbConnection conn = new SqlConnection(_connectionFactory.GetConnectionString()))
@@ -101,6 +102,6 @@ namespace WeCharge.DAL.Repository
             return await Task.FromResult(true);
         }
 
-
+        
     }
 }
