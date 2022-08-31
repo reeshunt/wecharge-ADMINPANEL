@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "sSUDrsTvNd5Tb+7+7riIcqSvmlXtGmXybavI4ggkVeqZADQ8WhwTos4p6wqohsdF4tT4VR9+98FWaX2yiKSubA==",
+  "dgSpecHash": "ucZ2qpwCXAdTkTEmgZGSGRVlIQZ9Sj2sXiJOiBXop0UCmTaZAxHWSDsgOqmWHJLnLPe5MeG7q7osAjEEQr6z7g==",
   "success": true,
-  "projectFilePath": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+  "projectFilePath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kumarr\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
-    "C:\\Users\\kumarr\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
-    "C:\\Users\\kumarr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
-    "C:\\Users\\kumarr\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
-    "C:\\Users\\kumarr\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
+    "C:\\Users\\varung\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\varung\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\varung\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "C:\\Users\\varung\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\varung\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
   ],
   "logs": []
 }

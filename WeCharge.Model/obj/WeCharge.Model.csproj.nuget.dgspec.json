@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {}
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {}
   },
   "projects": {
-    "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
-        "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
-        "outputPath": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "packagesPath": "C:\\Users\\varung\\.nuget\\packages\\",
+        "outputPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\varung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

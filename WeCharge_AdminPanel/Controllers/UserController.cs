@@ -13,11 +13,14 @@ namespace WeCharge_AdminPanel.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IAccountServices _accountServices;
         private readonly IAssetServices _assetServices;
-        public UserController(ILogger<HomeController> logger, IAccountServices accountServices, IAssetServices assetServices)
+        private readonly IWallet _walletServices;
+        public UserController(ILogger<HomeController> logger, IAccountServices accountServices, IAssetServices assetServices, IWallet walletServices)
         {
             _accountServices = accountServices;
             _assetServices = assetServices;
             _logger = logger;
+            _walletServices = walletServices;
+
         }
 
         //public Task<IActionResult> Add()
@@ -105,6 +108,47 @@ namespace WeCharge_AdminPanel.Controllers
 
 
 
+        }
+
+
+        public IActionResult Wallet()
+        {
+            return View("Wallet");
+        }
+
+        public async Task<IActionResult> GetUsersWallet(JqueryDatatableParam param)
+        {
+            try
+            {
+                var myParams = new DynamicParameters();
+                myParams.Add("@skip", param.iDisplayStart);
+                myParams.Add("@take", param.iDisplayLength);
+                myParams.Add("@search_key", param.sSearch);
+                var displayResult = await _walletServices.GetDisplayByQuerry("wecharge.USP_GetUsersWallet", myParams).ConfigureAwait(true);
+                var totalRecords = displayResult.Any() ? displayResult.First().TotalRecords : 0;
+                return Json(new
+                {
+                    param.sEcho,
+                    iTotalRecords = totalRecords,
+                    iTotalDisplayRecords = totalRecords,
+                    aaData = displayResult
+                });
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateWallet(string id, string balance)
+        {
+            Wallet _wallet = await _walletServices.GetByID(Convert.ToInt32(id)).ConfigureAwait(false);
+            _wallet.Balance = Convert.ToDouble(balance);
+            var result = _walletServices.UpdateWallet(_wallet);
+            return Json(result);
         }
     }
 }

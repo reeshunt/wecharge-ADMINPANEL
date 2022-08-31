@@ -1,0 +1,24 @@
+﻿@using WeCharge.Model
+@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="table-responsive">
+                    <table id="tblWallet" class="table dt-responsive nowrap">
+                        <thead>
+                            <tr>
+                                 <th>FULL_NAME </th>
+                                 <th>Balance </th>
+                                 <th>Action </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                
+@section scripts {
+    <script src="~/JS/Jquery.min.js"></script> 
+    <script src="~/JS/Manage-Wallet.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+}
