@@ -11,10 +11,14 @@ namespace WeCharge_AdminPanel.Controllers
     {
         private readonly ILogger<OrdersController> _logger;
         private readonly IOrdersServices _ordersServices;
+        private readonly IAccountServices _accountServices;
+        private readonly IReserveServices _reserveServices;
         private readonly IMapper _mapper;
 
-        public OrdersController(ILogger<OrdersController> logger, IMapper mapper, IOrdersServices ordersServices)
+        public OrdersController(ILogger<OrdersController> logger, IReserveServices reserveServices, IAccountServices accountServices, IMapper mapper, IOrdersServices ordersServices)
         {
+            _reserveServices = reserveServices;
+            _accountServices = accountServices;
             _mapper = mapper;
             _ordersServices = ordersServices;
             _logger = logger;
@@ -24,9 +28,42 @@ namespace WeCharge_AdminPanel.Controllers
         {
             return View();
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            return View();
+            try
+            {
+                ViewBag.Users = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_Users_Customers", null);
+                ViewBag.VendorName = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_ActiveVendors", null);
+                ViewBag.Fuel = await _reserveServices.GetAllFuel();
+                ViewBag.TimeSlot = await _reserveServices.GetDisplayByQuerry("wecharge.USP_Get_Time_Slot", null);
+                ViewBag.PaymentMode = await _reserveServices.GetAllPaymentMode();
+                return View();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task<JsonResult> GetUserAddress(int id)
+        {
+            try
+            {
+                var myParams = new DynamicParameters();
+                myParams.Add("@userId", id);
+                var getTheData = await _accountServices.GetByQuerryForAddress("wecharge.USP_Get_Users_Address", myParams);
+                if (getTheData != null)
+                {
+                    return Json(getTheData);
+                }
+                return Json(null);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            
         }
 
         /// <summary>

@@ -8,89 +8,89 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WeCharge_AdminPanel
 build_property.RootNamespace = WeCharge_AdminPanel
-build_property.ProjectDir = D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge_AdminPanel\
+build_property.ProjectDir = D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge_AdminPanel\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge_AdminPanel
+build_property.MSBuildProjectDirectory = D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge_AdminPanel
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Account/Login.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Feedback/Index.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Feedback/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Home/Index.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Home/Privacy.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Orders/Create.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Orders/Index.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/Error.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/User/Add.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/User/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/User/Assets.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/User/Assets.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBc3NldHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/User/CreateAsset.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/User/CreateAsset.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGVBc3NldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/User/View.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/User/View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/Add.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/Edit.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/Index.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/_Edit.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Vendors/_Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xfRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/_ViewImports.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/_ViewStart.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/_AdminLayout.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-2yyz18nvf0
 
-[D:/Rees/Work-2/EDU/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/_LoginLayout.cshtml]
+[D:/Projects/Tech-Automations/WeCharge_Admin/WeCharge_AdminPanel/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-o9hgjwx6q7

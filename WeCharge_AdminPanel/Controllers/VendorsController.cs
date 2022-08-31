@@ -28,7 +28,7 @@ namespace WeCharge_AdminPanel.Controllers
         /// <returns></returns>
         public async Task<IActionResult> Index()
         {
-            ViewBag.VendorName = await _accountServices.GetAll();
+            ViewBag.VendorName = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_ActiveVendors", null);
             return View();
         }
 
@@ -55,6 +55,7 @@ namespace WeCharge_AdminPanel.Controllers
                 myParams.Add("@skip", param.iDisplayStart);
                 myParams.Add("@take", param.iDisplayLength);
                 myParams.Add("@search_key", param.sSearch);
+                myParams.Add("@userName", param.UserType);
                 var displayResult = await _accountServices.GetDisplayByQuerry("wecharge.USP_GetVendors", myParams).ConfigureAwait(true);
                 var totalRecords = displayResult.Any() ? displayResult.First().TotalRecords : 0;
                 return Json(new

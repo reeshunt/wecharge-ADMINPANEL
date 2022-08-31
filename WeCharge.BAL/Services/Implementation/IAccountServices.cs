@@ -12,6 +12,7 @@ namespace WeCharge.BAL.Services.Implementation
     public interface IAccountServices
     {
         Task<Users> GetByQuerry(string procedureName, DynamicParameters param);
+        Task<IEnumerable<Address>> GetByQuerryForAddress(string procedureName, DynamicParameters param);
         Task<IEnumerable<UsersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param);
         Task<Users> GetById(int iD);
         Task<int> AddVendor(Users users);

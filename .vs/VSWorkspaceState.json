@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WeCharge_AdminPanel\\Views",
+    "\\WeCharge_AdminPanel\\Views\\Vendors"
   ],
-  "SelectedNode": "\\WeCharge-AdminPanel.sln",
   "PreviewInSolutionExplorer": false
 }

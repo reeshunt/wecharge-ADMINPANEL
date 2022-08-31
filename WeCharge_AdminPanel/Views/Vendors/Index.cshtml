@@ -5,9 +5,7 @@
 <div class="form-group row">
     <label class="col-4 pt-1 text-right">User Name:</label>
     <div class="col-8">
-        <select id="ddlUserType" class="form-control">
-           <select class="form-control" id="agentSubdomainId" asp-items="@(new SelectList(@ViewBag.VendorName,"ID", "FULL_NAME"))"><option value="1">-Select-</option></select>
-        </select>
+           <select class="form-control" id="vendorId" asp-items="@(new SelectList(@ViewBag.VendorName,"ID", "FULL_NAME"))"><option value="1">-Select-</option></select>
     </div>
 </div>
 </br>
@@ -29,7 +27,7 @@
                     </table>
                 </div>
             
-<div id="editPartial"></div>
+
 
 @section scripts {
     <script src="~/JS/Jquery.min.js"></script>
@@ -38,6 +36,10 @@
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
     <script>
+        $("#vendorId").change(function () {
+            var val = ($('option:selected', $(this)).val());
+            console.log(val);
+        });
     function ExportToExcel(type, fn, dl) {
         debugger;
         var elt = document.getElementById('tblVendors');

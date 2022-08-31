@@ -15,9 +15,11 @@ namespace WeCharge.BAL.Services.Interface
     {
         private readonly IRepository<Users> _repository;
         private readonly IRepository<UsersDTO> _viewrepository;
+        private readonly IRepository<Address> _classRepository;
 
-        public AccountServices(IRepository<Users> repository, IRepository<UsersDTO> viewrepository)
+        public AccountServices(IRepository<Users> repository, IRepository<Address> classRepository, IRepository<UsersDTO> viewrepository)
         {
+            _classRepository=classRepository;
             _repository = repository;
             _viewrepository = viewrepository;
         }
@@ -26,7 +28,7 @@ namespace WeCharge.BAL.Services.Interface
         {
              return await _repository.AddAsync(users);
         }
-
+         
         public async Task<List<Users>> GetAll()
         {
              return (List<Users>)await _repository.GetAllAsync().ConfigureAwait(false);
@@ -40,6 +42,11 @@ namespace WeCharge.BAL.Services.Interface
         public async Task<Users> GetByQuerry(string procedureName, DynamicParameters param)
         {
             return await _repository.GetByQuery(procedureName, param).ConfigureAwait(false);
+        }
+
+        public async Task<IEnumerable<Address>> GetByQuerryForAddress(string procedureName, DynamicParameters param)
+        {
+            return await _classRepository.GetAllByQuery(procedureName, param);
         }
 
         public async Task<IEnumerable<UsersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
