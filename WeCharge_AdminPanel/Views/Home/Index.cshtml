@@ -3,13 +3,13 @@
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 
 }
+@model WeCharge.Model.DTO.DashboardCountDTO
 <div class="row">
     <div class="col-lg-3 col-6 cards">
         <!-- small box -->
         <div class="small-box bg-info">
             <div class="inner">
-                <h3>150</h3>
-
+                <h3>@Model.TOTAL_BOWSER_ORDER</h3>
                 <p>Total Earnings</p>
             </div>
             <div class="icon">
@@ -21,7 +21,7 @@
         <!-- small box -->
         <div class="small-box bg-warning">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_DIESEL_ORDER</h3>
 
                 <p>Total Diesel Orders</p>
             </div>
@@ -34,7 +34,7 @@
         <!-- small box -->
         <div class="small-box bg-danger">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_BOWSER_ORDER</h3>
 
                 <p>Total Bowser Orders</p>
             </div>
@@ -47,7 +47,7 @@
         <!-- small box -->
         <div class="small-box bg-success">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_USER</h3>
                 <p>Total Users</p>
             </div>
             <div class="icon">
@@ -59,7 +59,7 @@
         <!-- small box -->
         <div class="small-box bg-info">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_CORPORATE_USER</h3>
                 <p>Total Corporate Users</p>
             </div>
             <div class="icon">
@@ -71,7 +71,7 @@
         <!-- small box -->
         <div class="small-box bg-warning">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_INDIVIDUAL_USER</h3>
                 <p>Total CRM Users</p>
             </div>
             <div class="icon">
@@ -83,7 +83,7 @@
         <!-- small box -->
         <div class="small-box bg-danger">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_SUPPLIER</h3>
                 <p>Total Vendors</p>
             </div>
             <div class="icon">
@@ -95,12 +95,12 @@
         <!-- small box -->
         <div class="small-box bg-success">
             <div class="inner">
-                <h3>150</h3>
+                <h3>@Model.TOTAL_ORDER</h3>
                 <p>Total Orders</p>
             </div>
             <div class="icon">
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="@Url.Action("Index","Orders")" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
     </div>
 </div>

@@ -218,23 +218,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sangamk\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\kumarr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education\\New-test\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+      "projectUniqueName": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
       "projectName": "WeCharge.Model",
-      "projectPath": "D:\\Education\\New-test\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
-      "packagesPath": "C:\\Users\\sangamk\\.nuget\\packages\\",
-      "outputPath": "D:\\Education\\New-test\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+      "projectPath": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+      "packagesPath": "C:\\Users\\kumarr\\.nuget\\packages\\",
+      "outputPath": "D:\\Rees\\Work-2\\EDU\\WeCharge_Admin\\WeCharge.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sangamk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kumarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

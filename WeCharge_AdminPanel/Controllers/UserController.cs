@@ -20,10 +20,10 @@ namespace WeCharge_AdminPanel.Controllers
             _logger = logger;
         }
 
-        //public Task<IActionResult> Add()
-        //{
-        //    return View();
-        //}
+        public Task<IActionResult> Add()
+        {
+            return View();
+        }
 
         public async Task<IActionResult> View()
         {

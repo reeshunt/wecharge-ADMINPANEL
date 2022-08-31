@@ -14,15 +14,21 @@ namespace WeCharge.BAL.Services.Interface
     public class OrdersServices : IOrdersServices
     {
         private readonly IRepository<OrdersDTO> _viewrepository;
+        private readonly IRepository<DashboardCountDTO> _dashboardrepository;
 
-        public OrdersServices(IRepository<OrdersDTO> viewrepository)
+        public OrdersServices(IRepository<OrdersDTO> viewrepository, IRepository<DashboardCountDTO> dashboardRepository)
         {
             _viewrepository = viewrepository;
+            _dashboardrepository = dashboardRepository;
         }
 
         public async Task<IEnumerable<OrdersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
         {
             return await _viewrepository.GetAllByQuery(procedureName, param);
+        }
+        public async Task<DashboardCountDTO> GetDashboardCount(string procedureName, DynamicParameters param)
+        {
+            return await _dashboardrepository.GetByQuery(procedureName, param);
         }
     }
 }
