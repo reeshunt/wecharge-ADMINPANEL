@@ -19,6 +19,28 @@ namespace WeCharge.BAL.Services.Interface
             _repository = repository;
         }
 
+        public async Task<int> AddAssets(Assets assets)
+        {
+            try
+            {
+                return await _repository.AddAsync(assets);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<bool> DeleteAssets(Assets assets)
+        {
+            try
+            {
+                bool result = await _repository.UpdateAsync(assets).ConfigureAwait(false);
+                return result;
+            }
+            catch(Exception ex) { throw ex; }
+        }
+
         public async Task<List<Assets>> GetAll()
         {
              return (List<Assets>)await _repository.GetAllAsync().ConfigureAwait(false);

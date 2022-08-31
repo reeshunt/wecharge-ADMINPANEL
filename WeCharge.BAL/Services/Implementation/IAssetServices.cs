@@ -11,6 +11,10 @@ namespace WeCharge.BAL.Services.Implementation
     public interface IAssetServices
     {
         Task<Assets> GetByQuerry(string procedureName, DynamicParameters param);
+        Task<Assets> GetByID(int? id);
         Task<List<Assets>> GetAll();
+        Task<int> AddAssets(Assets assets);
+        Task<bool> DeleteAssets(Assets assets);
+        Task<bool> UpdateAssets(Assets assets);
     }
 }
