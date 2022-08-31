@@ -14,24 +14,37 @@ namespace WeCharge_AdminPanel.Controllers
         private readonly IAccountServices _accountServices;
         private readonly IMapper _mapper;
 
-        public VendorsController(ILogger<VendorsController> logger, IMapper mapper , IAccountServices accountServices)
+        public VendorsController(ILogger<VendorsController> logger, IMapper mapper, IAccountServices accountServices)
         {
-            _mapper= mapper;
+            _mapper = mapper;
             _accountServices = accountServices;
             _logger = logger;
         }
 
+        /// <summary>
+        /// Get List of vendors
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// Get the UI of ADD
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Add()
         {
             return View();
         }
 
+        /// <summary>
+        /// Get list of vendors by JSON
+        /// </summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
         public async Task<IActionResult> GetAllVendors(JqueryDatatableParam param)
         {
             try
@@ -55,21 +68,119 @@ namespace WeCharge_AdminPanel.Controllers
 
                 throw;
             }
-            
+
         }
 
+        /// <summary>
+        /// Add Vendors.
+        /// </summary>
+        /// <param name="usersViewModel"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Add(UsersViewModel usersViewModel)
         {
-            var proMap = _mapper.Map<Users>(usersViewModel);
-            proMap.CREATED_DATE = DateTime.Now;
-            proMap.MODOFIED_DATE = DateTime.Now;
-            proMap.IMAGE_PATH = "http://103.205.66.213:3000/image/avatar1.jpg";
-            proMap.IS_ACTIVE = true;
-            proMap.ROLE_ID = 3;
-            proMap.PASSWORD_HASH = "$2b$10$Lzx9ZXkz6t1I2ZySz.Jf/uOgnxPEu386tx96bZ9XRqkVHijcksjJS";
-            await _accountServices.AddVendor(proMap);
-            return View();
+            try
+            {
+                var proMap = _mapper.Map<Users>(usersViewModel);
+                proMap.CREATED_DATE = DateTime.Now;
+                proMap.MODOFIED_DATE = DateTime.Now;
+                proMap.IMAGE_PATH = "http://103.205.66.213:3000/image/avatar1.jpg";
+                proMap.IS_ACTIVE = true;
+                proMap.ROLE_ID = 3;
+                proMap.PASSWORD_HASH = "$2b$10$Lzx9ZXkz6t1I2ZySz.Jf/uOgnxPEu386tx96bZ9XRqkVHijcksjJS";
+                await _accountServices.AddVendor(proMap);
+                return RedirectToAction("Add");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
+
+        /// <summary>
+        /// Edit vendors by ID  
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> Edit(int id)
+        {
+            try
+            {
+                var getUserData = await _accountServices.GetById(id);
+                if (getUserData != null)
+                {
+                    var proMap = _mapper.Map<UsersViewModel>(getUserData);
+                    return View(proMap);
+                }
+                return RedirectToAction("Index");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Update the vendors details
+        /// </summary>
+        /// <param name="usersViewModel"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> Update(UsersViewModel usersViewModel)
+        {
+            try
+            {
+                var getUserData = await _accountServices.GetById(usersViewModel.Id);
+                if (getUserData != null)
+                {
+                    getUserData.EMAIL = usersViewModel.EMAIL;
+                    getUserData.FULL_NAME = usersViewModel.FULL_NAME;
+                    getUserData.MOBILE_NO = usersViewModel.MOBILE_NO; ;
+                    getUserData.MODOFIED_DATE = DateTime.Now;
+                    getUserData.IMAGE_PATH = "http://103.205.66.213:3000/image/avatar1.jpg";
+                    var status = await _accountServices.UpdateVendor(getUserData);
+                    if (status)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                }
+                return RedirectToAction("Edit", usersViewModel);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Delete the Vendor
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> Delete(int Id)
+        {
+            try
+            {
+                var getUserData = await _accountServices.GetById(Id);
+                if (getUserData != null)
+                {
+                    getUserData.IS_ACTIVE = false;
+                    var status = await _accountServices.UpdateVendor(getUserData);
+                    if (status)
+                    {
+                        return Json(true);
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
     }
 }

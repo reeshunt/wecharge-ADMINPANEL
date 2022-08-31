@@ -2,6 +2,7 @@
 {
     public class UsersViewModel
     {
+		public int Id { get; set; }
 		public int ROLE_ID { get; set; }
 		public string FULL_NAME { get; set; }
 		public string MOBILE_NO { get; set; }

@@ -21,3 +21,15 @@ D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.
 D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
 D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
 D:\Rees\SWork\EDU\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.deps.json
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.AssemblyReference.cache
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfoInputs.cache
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfo.cs
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.CoreCompileInputs.cache
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\refint\WeCharge.Model.dll
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb
+D:\Projects\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
