@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="table-responsive">
+    <table id="tblTimeSlot" class="table dt-responsive nowrap">
+        <thead>
+            <tr>
+                 <th>TIME_SLOT_FROM </th> 
+                 <th>TIME_SLOT_TO </th>
+                 <th>IS_ACTIVE </th>
+                 <th>CREATED_BY  </th>
+                 <th>CREATED_DATE </th>
+                 <th>Action </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+@section scripts {
+    <script src="~/JS/Jquery.min.js"></script>
+    <script src="~/JS/Manage-TimeSlot.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+}
