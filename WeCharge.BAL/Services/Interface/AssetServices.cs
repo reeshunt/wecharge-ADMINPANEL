@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 using WeCharge.BAL.Services.Implementation;
 using WeCharge.DAL.Repository;
 using WeCharge.Model;
+using WeCharge.Model.DTO;
 
 namespace WeCharge.BAL.Services.Interface
 {
     public class AssetServices : IAssetServices
     {
         private readonly IRepository<Assets> _repository;
+        private readonly IRepository<AssetDTOs> _viewrepository;
 
-        public AssetServices(IRepository<Assets> repository)
+        public AssetServices(IRepository<Assets> repository, IRepository<AssetDTOs> viewrepository)
         {
+            _viewrepository=viewrepository;
             _repository = repository;
         }
 
@@ -46,6 +49,11 @@ namespace WeCharge.BAL.Services.Interface
              return (List<Assets>)await _repository.GetAllAsync().ConfigureAwait(false);
         }
 
+        public async Task<IEnumerable<Assets>> GetALlByQuerry(string procedureName, DynamicParameters param)
+        {
+            return await _repository.GetAllByQuery(procedureName, param).ConfigureAwait(false);
+        }
+
         public async Task<Assets> GetByID(int? id)
         {
             try
@@ -63,7 +71,12 @@ namespace WeCharge.BAL.Services.Interface
             return await _repository.GetByQuery(procedureName, param).ConfigureAwait(false);
         }
 
-        public async Task<bool> UpdateAssets(Assets assets)
+		public async Task<AssetDTOs> GetByQuerryAssets(string procedureName, DynamicParameters param)
+		{
+			return await _viewrepository.GetByQuery(procedureName,param).ConfigureAwait(false);
+		}
+
+		public async Task<bool> UpdateAssets(Assets assets)
         {
             try
             {

@@ -1,92 +1,130 @@
 ﻿@using WeCharge.Model.DTO
 @{
-    Layout = "/Views/Shared/_AdminLayout.cshtml";
+	Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
 @model OrdersDTO
 <div class="content">
-    <div class="container-fluid">
-        <div class="card-header">
-            <h3 class="card-title"><b>Add New Order<b></h3>
-        </div>
-        <div class="card-body">
-            <form>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <label asp-for="@Model.USER_ID">User</label>
-                        <select class="form-control" id="userID" asp-items="@(new SelectList(@ViewBag.Users,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
-                    </div>
-                    <div class="col-sm-3 offset-1">
-                        <label asp-for="@Model.ADDRESS_ID">Address</label>
-                        <select class="form-control" id="addressDD">
-                            <option value="0">--Select Address--</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-3 offset-1">
-                        <label asp-for="@Model.VENDOR_ID">Vendor</label>
-                        <select class="form-control" id="vendorDD" asp-items="@(new SelectList(@ViewBag.VendorName,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <label asp-for="@Model.FUEL_TYPE_ID">Fuel Type</label>
-                        <select class="form-control" id="fuelDD" asp-items="@(new SelectList(@ViewBag.Fuel,"ID", "FUEL_TYPE_NAME"))"><option value="0">-Select-</option></select>
-                    </div>
-                    <div class="col-sm-3 offset-1">
-                        <label asp-for="@Model.QUANTITY">Quantity</label>
-                        <input asp-for="@Model.QUANTITY" type="number" class="form-control select2-dropdown">
-                    </div>
-                    <div class="col-sm-3 offset-1">
-                        <label asp-for="@Model.PRICE">Price</label>
-                        <input asp-for="@Model.PRICE" type="number" class="form-control" readonly>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <label asp-for="@Model.TIME_SLOT_ID">Time Slot</label>
-                        <select class="form-control" id="TimeSlotDD" asp-items="@(new SelectList(@ViewBag.TimeSlot,"ID", "TimeSlot"))"><option value="0">-Select-</option></select>
-                    </div>
-                    <div class="col-sm-3 offset-1">
-                        <label asp-for="@Model.PAYMENT_MODE_ID">Payment Mode</label>
-                        <select class="form-control" id="PaymentModeDD" asp-items="@(new SelectList(@ViewBag.PaymentMode,"ID", "MODE"))"><option value="0">-Select-</option></select>
-                    
-                    </div>
-                    <div class="col-sm-3 offset-1">
-                        <label asp-for="@Model.ASSET_TYPE_ID">Asset</label>
-                        <select asp-for="@Model.ASSET_TYPE_ID" class="form-control select2-dropdown">
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 mt-4">
-                        <button type="submit" class="btn btn-success">Submit</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+	<div class="container-fluid">
+		<div class="card-header">
+			<h3 class="card-title"><b>Add New Order<b></h3>
+		</div>
+		<div class="card-body">
+			<form>
+				<div class="row">
+					<div class="col-sm-3">
+						<label asp-for="@Model.USER_ID">User</label>
+						<select class="form-control" id="userID" asp-items="@(new SelectList(@ViewBag.Users,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
+					</div>
+					<div class="col-sm-3 offset-1">
+						<label asp-for="@Model.ADDRESS_ID">Address</label>
+						<select class="form-control" id="addressDD">
+							<option value="0">--Select Address--</option>
+						</select>
+					</div>
+					<div class="col-sm-3 offset-1">
+						<label asp-for="@Model.VENDOR_ID">Vendor</label>
+						<select class="form-control" id="vendorDD" asp-items="@(new SelectList(@ViewBag.VendorName,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<label asp-for="@Model.FUEL_TYPE_ID">Fuel Type</label>
+						<select class="form-control" id="fuelDD" asp-items="@(new SelectList(@ViewBag.Fuel,"ID", "FUEL_TYPE_NAME"))"><option value="0">-Select-</option></select>
+					</div>
+					<div class="col-sm-3 offset-1">
+						<label asp-for="@Model.QUANTITY">Quantity</label>
+						<input asp-for="@Model.QUANTITY" id=quantitytxt type="number" class="form-control ">
+					</div>
+					<div class="col-sm-3 offset-1">
+						<label asp-for="@Model.PRICE">Price</label>
+						<input asp-for="@Model.PRICE" id=priceDD type="number" class="form-control" readonly>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<label asp-for="@Model.TIME_SLOT_ID">Time Slot</label>
+						<select class="form-control" id="TimeSlotDD" asp-items="@(new SelectList(@ViewBag.TimeSlot,"ID", "TimeSlot"))"><option value="0">-Select-</option></select>
+					</div>
+					<div class="col-sm-3 offset-1">
+						<label asp-for="@Model.PAYMENT_MODE_ID">Payment Mode</label>
+						<select class="form-control" id="PaymentModeDD" asp-items="@(new SelectList(@ViewBag.PaymentMode,"ID", "MODE"))"><option value="0">-Select-</option></select>
+
+					</div>
+					<div class="col-sm-3 offset-1">
+						<label asp-for="@Model.ASSET_TYPE_ID">Asset</label>
+						<select class="form-control" id="assetDD">
+							<option value="0">--Select Asset--</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 mt-4">
+						<button type="submit" class="btn btn-success">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
 
-
-
 @section scripts {
-    <script>
-        $("#userID").change(function () {
-            var val = ($('option:selected', $(this)).val());
-            $.ajax({
-                url: "/Orders/GetUserAddress/" + val,
-                cache: false,
-                success: function (reponse) {
-                    console.log(reponse)
-                    $.each(reponse, function (data, value) {
-                        $("#addressDD").append($("<option></option>").val(value.id).html(value.address + ', ' + value.addresS_PINCODE));
-                    })
-                    console.log(reponse)
-                }
-            });
-        });
+<script>
+				$("#userID").change(function () {
+					var val = ($('option:selected', $(this)).val());
+					$.ajax({
+						url: "/Orders/GetUserAddress/" + val,
+						cache: false,
+						success: function (reponse) {
+							$.each(reponse, function (data, value) {
+								$("#addressDD").append($("<option></option>").val(value.id).html(value.address + ', ' + value.addresS_PINCODE));
+							});
+						}
+					});
+				});
 
-        $('.select2-dropdown').select2({
-            theme: "classic"
-        });
-    </script>
+
+				$("#fuelDD").change(function () {
+				var userIdVal = $('#userID').val();
+				var fuelId = ($('option:selected', $(this)).val());
+				$.ajax({
+					url: `/Orders/GetAssets/`,
+					data: {
+						userId: userIdVal,
+						fuelTypeId: fuelId,
+					},
+					success: function (data) {
+						console.log(data);
+						if (data != null) {
+						$.each(data, function (data, value) {
+								$("#assetDD").append($("<option></option>").val(value.id).html(value.equipmenT_NAME));
+							})
+						}
+					}
+				  });
+			});
+
+
+			$( "#quantitytxt" ).change(function() {
+				var vendorIdVal = $('#vendorDD').val();
+				var fuelTypeId = $('#fuelDD').val();
+				var quantityVal = $('#quantitytxt').val();
+					$.ajax({
+					url: `/Orders/GetFuelPrice/`,
+					data: {
+						vendorId: vendorIdVal,
+						fuelTypeId: fuelTypeId,
+						quantity: quantityVal,
+					},
+					success: function (data) {
+						console.log(data);
+						if (data != null) {
+						
+
+						}
+					}
+				  });
+			});
+
+
+</script>
 }
