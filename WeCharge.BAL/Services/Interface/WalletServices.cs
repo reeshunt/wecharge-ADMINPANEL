@@ -6,16 +6,19 @@ using System.Text;
 using System.Threading.Tasks;
 using WeCharge.DAL.Repository;
 using WeCharge.Model;
+using WeCharge.Model.DTO;
 
 namespace WeCharge.BAL.Services.Implementation
 {
     public class WalletServices : IWallet
     {
         private readonly IRepository<Wallet> _repository;
+        private readonly IRepository<WalletDTO> _dtoRepository;
 
-        public WalletServices(IRepository<Wallet> repository)
+        public WalletServices(IRepository<Wallet> repository, IRepository<WalletDTO> dtorepository)
         {
             _repository = repository;
+            _dtoRepository = dtorepository;
         }
 
         public async Task<Wallet> GetByID(int? id)
@@ -30,19 +33,14 @@ namespace WeCharge.BAL.Services.Implementation
             }
         }
 
-        public async Task<IEnumerable<Wallet>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
+        public async Task<IEnumerable<WalletDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
         {
-            return await _repository.GetAllByQuery(procedureName, param).ConfigureAwait(false);
+            return await _dtoRepository.GetAllByQuery(procedureName, param).ConfigureAwait(false);
         }
 
         public async Task<bool> UpdateWallet(Wallet wallet)
         {
-            try
-            {
-                bool result = await _repository.UpdateAsync(wallet).ConfigureAwait(false);
-                return result;
-            }
-            catch (Exception ex) { throw ex; }
+            return await _repository.UpdateAsync(wallet).ConfigureAwait(false);
         }
     }
 }

@@ -143,10 +143,10 @@ namespace WeCharge_AdminPanel.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateWallet(string id, string balance)
+        public async Task<IActionResult> UpdateWallet([FromBody] Wallet wallet)
         {
-            Wallet _wallet = await _walletServices.GetByID(Convert.ToInt32(id)).ConfigureAwait(false);
-            _wallet.Balance = Convert.ToDouble(balance);
+            Wallet _wallet = await _walletServices.GetByID(wallet.ID).ConfigureAwait(false);
+            _wallet.Balance = Convert.ToDouble(wallet.Balance);
             var result = _walletServices.UpdateWallet(_wallet);
             return Json(result);
         }

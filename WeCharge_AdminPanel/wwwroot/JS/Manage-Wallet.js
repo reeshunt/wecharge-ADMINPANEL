@@ -87,12 +87,15 @@
             $('#btnCancel' + id).css('display', 'none');
             $('#btnUpdate' + id).css('display', 'block');
             $('#txtBal' + id).attr('readonly', true);
+            var sendInfo = { "ID": parseInt(id), "Balance": parseFloat($('#txtBal' + id).val())};
+            sendInfo = JSON.stringify(sendInfo);
             $.ajax({
-                url: `/User/UpdateWallet/${id}/${$('#txtBal' + id).val()}`,
+                url: `/User/UpdateWallet/`,
                 type: 'POST',
+                data: sendInfo,
                 cache: false,
-                contentType: false,
-                processData: false,
+                contentType: "application/json; charset=utf-8",
+                //processData: false,
                 success: function (response) {
                     /*swal("Success", "Updated successfully!", "success")*/
                 },
