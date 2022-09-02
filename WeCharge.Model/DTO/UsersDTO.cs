@@ -21,5 +21,6 @@ namespace WeCharge.Model.DTO
 		public string IMAGE_PATH { get; set; }
 		public bool IS_ACTIVE { get; set; }
 		public int TotalRecords { get; set; }
+		public string ROLENAME { get; set; }
 	}
 }

@@ -2570,3 +2570,5 @@ D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel\obj\Debug\net6.0\refint
 D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel\obj\Debug\net6.0\WeCharge_AdminPanel.pdb
 D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel\obj\Debug\net6.0\WeCharge_AdminPanel.genruntimeconfig.cache
 D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel\obj\Debug\net6.0\ref\WeCharge_AdminPanel.dll
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel\bin\Debug\net6.0\libman.json
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel\bin\Debug\net6.0\BCrypt.Net-Next.dll

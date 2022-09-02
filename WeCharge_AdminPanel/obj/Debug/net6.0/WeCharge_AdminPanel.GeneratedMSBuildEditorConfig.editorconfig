@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge_AdminPanel
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Varun/Docs/DemoApp/WeCharge_Admin/WeCharge_AdminPanel/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Varun/Docs/DemoApp/WeCharge_Admin/WeCharge_AdminPanel/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

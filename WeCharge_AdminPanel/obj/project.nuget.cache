@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UWgEo8OUR/dG2amba9LB5Th5VnFbuSo1Tulfpx/UPPlN8E+/LofHZiLMdHVURxEJitLErHrZuynp+7mfUnnSVg==",
+  "dgSpecHash": "jteiBOIDV56HX5f61CLW+9zgBbNfEJjju1yBn7svoU/+MYkF7Gysbo9UUbL9Kk8iU55lu3YMpZuGoTzx78Txsg==",
   "success": true,
   "projectFilePath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\varung\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\varung\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\varung\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\varung\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\varung\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
     "C:\\Users\\varung\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
