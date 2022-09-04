@@ -31,6 +31,19 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        }
+      },
       "Dapper/2.0.123": {
         "type": "package",
         "compile": {
@@ -3467,6 +3480,19 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "BCrypt.Net/0.1.0": {
+      "sha512": "sST2w361Dxt9GGMfpOTiK50wXGV64Ybb1hiX3xjEWnhVYZNF43NuySGwADJa7X1R+bA53NsFR+tuDxcYiJeIOA==",
+      "type": "package",
+      "path": "bcrypt.net/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net.0.1.0.nupkg.sha512",
+        "bcrypt.net.nuspec",
+        "lib/net35/BCrypt.Net.XML",
+        "lib/net35/BCrypt.Net.dll"
       ]
     },
     "Dapper/2.0.123": {
@@ -9743,6 +9769,7 @@
     "net6.0": [
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "BCrypt.Net >= 0.1.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.8",
       "Microsoft.Extensions.DependencyInjection >= 6.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.8",
@@ -9751,19 +9778,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\91875\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\New folder (2)\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
       "projectName": "WeCharge_AdminPanel",
-      "projectPath": "D:\\New folder (2)\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
-      "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-      "outputPath": "D:\\New folder (2)\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9777,8 +9804,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\New folder (2)\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
-              "projectPath": "D:\\New folder (2)\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+            "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
             }
           }
         }
@@ -9800,6 +9827,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[11.0.0, )"
+          },
+          "BCrypt.Net": {
+            "target": "Package",
+            "version": "[0.1.0, )"
           },
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
@@ -9840,5 +9871,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BCrypt.Net 0.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

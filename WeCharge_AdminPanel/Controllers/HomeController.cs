@@ -1,4 +1,4 @@
-﻿using Dapper;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WeCharge.BAL.Services.Implementation;
@@ -7,6 +7,7 @@ using WeCharge_AdminPanel.Models;
 
 namespace WeCharge_AdminPanel.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -23,7 +24,7 @@ namespace WeCharge_AdminPanel.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var dashboardCountData = await _ordersServices.GetDashboardCount("wecharge.USP_GET_DASHBOARD_COUNT",null).ConfigureAwait(true);
+            var dashboardCountData = await _ordersServices.GetDashboardCount("wecharge.USP_GET_DASHBOARD_COUNT", null).ConfigureAwait(true);
 
             return View(dashboardCountData);
         }
