@@ -9,6 +9,7 @@ namespace WeCharge.Model.DTO
 {
     public class DashboardCountDTO : BaseModel
     {
+        public int	TOTAL_EARNINGS { get; set; }
         public int	TOTAL_ORDER { get; set; }
         public int	TOTAL_USER { get; set; }
         public int	TOTAL_SUPPLIER { get; set; }

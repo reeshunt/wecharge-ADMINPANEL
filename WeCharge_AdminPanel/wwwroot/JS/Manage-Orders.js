@@ -27,7 +27,7 @@
                     "searchable": false
                 },
                 {
-                    "data": "ordeR_DATETIME",
+                    "data": "ordeR_DATETIME_STR",
                     "autoWidth": true,
                     "searchable": false
                 },

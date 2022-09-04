@@ -20,6 +20,7 @@ namespace WeCharge.Model.DTO
         public string	DELIVERY_ADDRESS { get; set; }
         public string	BILLING_ADDRESS { get; set; }
         public DateTime	ORDER_DATETIME { get; set; }
+        public string	ORDER_DATETIME_STR { get; set; }
         public int	TIME_SLOT_ID { get; set; }
         public decimal	DISCOUNT { get; set; }
         public int	PAYMENT_MODE_ID { get; set; }

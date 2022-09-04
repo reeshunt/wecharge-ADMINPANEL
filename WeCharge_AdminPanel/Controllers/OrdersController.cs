@@ -150,6 +150,10 @@ namespace WeCharge_AdminPanel.Controllers
                 myParams.Add("@take", param.iDisplayLength);
                 myParams.Add("@search_key", param.sSearch);
                 var displayResult = await _ordersServices.GetDisplayByQuerry("wecharge.USP_GetORDERS_Datatable", myParams).ConfigureAwait(true);
+                foreach(var item in displayResult)
+                {
+                    item.ORDER_DATETIME_STR = item.ORDER_DATETIME.ToString("dd/MM/yyyy");
+                }
                 var totalRecords = displayResult.Any() ? displayResult.First().TotalRecords : 0;
                 return Json(new
                 {
