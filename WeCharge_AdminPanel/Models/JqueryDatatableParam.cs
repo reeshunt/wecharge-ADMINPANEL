@@ -14,7 +14,7 @@
         public string UserType { get; set; }
         public int AgentSubdomainId { get; set; }
         public int PropertyId { get; set; }
-        public string UserId { get; set; }
+        public string UserId { get; set; } = null;
         public string userName { get; set; }
         public int RecentListing { get; set; }
 

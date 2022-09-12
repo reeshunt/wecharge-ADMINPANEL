@@ -48,7 +48,7 @@ namespace WeCharge_AdminPanel.Controllers
             }
         }
 
-        public async Task<IActionResult> AddOrder()
+        public async Task<IActionResult> AddOrder(OrdersViewModel ordersViewModel)
         {
             try
             {

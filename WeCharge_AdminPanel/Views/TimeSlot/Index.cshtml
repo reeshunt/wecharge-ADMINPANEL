@@ -1,7 +1,9 @@
 ﻿@{
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
-
+<div class="col-sm-12 mb-3">
+    <a class="btn btn-success float-right" href="@Url.Action("Create","TimeSlot")">Create</a>
+</div>
 <div class="table-responsive">
     <table id="tblTimeSlot" class="table dt-responsive nowrap">
         <thead>

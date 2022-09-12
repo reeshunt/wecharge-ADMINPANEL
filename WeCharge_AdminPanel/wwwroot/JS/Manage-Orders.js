@@ -27,7 +27,7 @@
                     "searchable": false
                 },
                 {
-                    "data": "ordeR_DATETIME_STR",
+                    "data": "ordeR_DATETIME",
                     "autoWidth": true,
                     "searchable": false
                 },
@@ -94,4 +94,62 @@
                 { "width": "50%", "targets": [1] }
             ],
         });
+
+
+    $(document)
+        .off('click', '#btnCreate')
+        .on('click', '#btnCreate', function (e) {
+            $('#btnCreate').prop('disabled', true);
+            $('#btnCreate').html('Wait <i class="fa fa-spinner fa-spin"></i>');
+            e.preventDefault();
+            var _this = $(this);
+            var _form = _this.closest("form");
+            var isvalid = _form.valid();
+            if (isvalid) {
+                var formData = new FormData();
+                formData.append("UserId", $("#frmCreate #userID").val());
+                formData.append("AddressId", $("#frmCreate #addressDD").val());
+                formData.append("VendorId", $("#frmCreate #vendorDD").val());
+                formData.append("FuelTypeId", $("#frmCreate #fuelDD").val());
+                formData.append("Quantity", $("#frmCreate #quantitytxt").val());
+                formData.append("Price", $("#frmCreate #priceDD").val());
+                formData.append("TimeSlotId", $("#frmCreate #TimeSlotDD").val());
+                formData.append("PaymentModeId", $("#frmCreate #PaymentModeDD").val());
+                formData.append("AssetTypeId", $("#frmCreate #assetDD").val());
+                $.ajax({
+                    url: `${baseUri}/Orders/AddOrder`,
+                    type: 'POST',
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: formData,
+                    success: function (response) {
+                        if (response.isSuccess === true) {
+                            document.querySelector('#frmCreate').reset();
+                            $('#tblOrders').DataTable().ajax.reload(null, false);
+                            swal("", "Orders Created Sucessfully!", "success")
+                            $('#btnCreate').prop('disabled', false);
+                            $('#btnCreate').html('Submit');
+                        }
+                        else {
+                            $("#error-msg-create").text(response.message);
+                            $('#btnCreate').prop('disabled', false);
+                            $('#btnCreate').html('Submit');
+                        }
+                    },
+                    error: function (response) {
+                        swal("Error", "An error has occured!", "error");
+                        $('#btnCreate').prop('disabled', false);
+                        $('#btnCreate').html('Submit');
+                    }
+                });
+            }
+            else {
+                $('#btnCreate').prop('disabled', false);
+                $('#btnCreate').html('Submit');
+            }
+
+        });
+
+
  });

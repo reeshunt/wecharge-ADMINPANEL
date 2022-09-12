@@ -22,9 +22,29 @@ namespace WeCharge.BAL.Services.Interface
             _viewrepository = viewrepository;
         }
 
+        public async Task<int> Add(TimeSlot timeSlot)
+        {
+            return await _repository.AddAsync(timeSlot);
+        }
+
+        public async Task<bool> Delete(TimeSlot timeSlot)
+        {
+            return await _repository.DeleteAsync(timeSlot);
+        }
+
+        public async Task<TimeSlot> GetById(int id)
+        {
+            return await _repository.GetByIdAsync(id);
+        }
+
         public async Task<IEnumerable<TimeSlotDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
         {
             return await _viewrepository.GetAllByQuery(procedureName, param);
+        }
+
+        public async Task<bool> Update(TimeSlot timeSlot)
+        {
+            return await _repository.UpdateAsync(timeSlot);
         }
     }
 }

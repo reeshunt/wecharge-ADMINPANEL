@@ -1,7 +1,11 @@
 ﻿$(document).ready(function () {
     window.onload = function () {
-        bindDatatable("1");
+        bindDatatable(null);
     };
+
+    $("#vendorId").change(function () {
+        bindDatatable($("#vendorId").val());
+    });
 
     $("#Refresh").click(function (e) {
         $('#tblVendors').DataTable().ajax.reload(null, false);

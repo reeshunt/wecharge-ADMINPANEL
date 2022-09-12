@@ -10,6 +10,9 @@ namespace WeCharge_AdminPanel.Models
         {
             CreateMap<UsersViewModel, Users>();
             CreateMap<Users, UsersViewModel>();
+
+            CreateMap<TimeSlotViewModel, TimeSlot>();
+            CreateMap<TimeSlot, TimeSlotViewModel>();
         }
             
     }

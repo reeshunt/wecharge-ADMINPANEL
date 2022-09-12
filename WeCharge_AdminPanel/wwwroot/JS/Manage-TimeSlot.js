@@ -1,8 +1,46 @@
 ﻿$(document).ready(function () {
 
     $("#Refresh").click(function (e) {
-        $('#tblOrders').DataTable().ajax.reload(null, false);
+        $('#tblTimeSlot').DataTable().ajax.reload(null, false);
     });
+
+
+    $(document)
+        .off('click', '.btnDelete')
+        .on('click', '.btnDelete', function () {
+            const id = $(this).attr('data-key');
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this record!",
+                type: "warning",
+                showCancelButton: true,
+                cancelButtonClass: "btn-primary",
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "Delete!",
+                closeOnConfirm: false
+            },
+                function () {
+                    $.ajax({
+                        url: `/TimeSlot/Delete/${id}`,
+                        type: 'POST',
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            if (response === true) {
+                                $('#tblTimeSlot').DataTable().ajax.reload(null, false);
+                                swal("", "Vendor Deleted successfully!", "success")
+                            }
+                            else {
+                                swal("Error", "An error has occured!", "error");
+                            }
+                        },
+                        error: function (response) {
+                            swal("Error", "An error has occured!", "error")
+                        }
+                    });
+                });
+        });
 
     var table = $('#tblTimeSlot')
         .DataTable({
@@ -51,7 +89,7 @@
                     "autoWidth": true,
                     render: function (data, type, row) {
                         return `<div>
-                                    <button type="button" class="btn btn-sm btn-info mr-2 btnEdit" data-key="${row.id}">Edit</button>
+                                     <a href='/TimeSlot/Edit/${row.id}' class="btn btn-default btn-info customhref" data-key="${row.id}">Edit</a>
                                     <button type="button" class="btn btn-sm btn-danger btnDelete" data-key="${row.id}">Delete</button>
                                 </div>`;
                     }
