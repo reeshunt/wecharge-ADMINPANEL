@@ -39,6 +39,11 @@ namespace WeCharge.BAL.Services.Interface
             return await _repository.GetByIdAsync(iD);
         }
 
+        public async Task<Address> GetByIdAdress(int iD)
+        {
+            return await _classRepository.GetByIdAsync(iD);
+        }
+
         public async Task<Users> GetByQuerry(string procedureName, DynamicParameters param)
         {
             return await _repository.GetByQuery(procedureName, param).ConfigureAwait(false);

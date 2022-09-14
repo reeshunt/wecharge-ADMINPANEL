@@ -134,3 +134,20 @@ C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Deb
 C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\refint\WeCharge.BAL.dll
 C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.pdb
 C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\ref\WeCharge.BAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.BAL.deps.json
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.BAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.BAL.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.DAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.DAL.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.csproj.AssemblyReference.cache
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.AssemblyInfoInputs.cache
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.AssemblyInfo.cs
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.csproj.CoreCompileInputs.cache
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.csproj.CopyComplete
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\refint\WeCharge.BAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\ref\WeCharge.BAL.dll

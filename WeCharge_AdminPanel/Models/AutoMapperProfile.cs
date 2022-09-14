@@ -13,6 +13,9 @@ namespace WeCharge_AdminPanel.Models
 
             CreateMap<TimeSlotViewModel, TimeSlot>();
             CreateMap<TimeSlot, TimeSlotViewModel>();
+
+            CreateMap<OrdersViewModel, Orders>();
+            CreateMap<Orders, OrdersViewModel>();
         }
             
     }
