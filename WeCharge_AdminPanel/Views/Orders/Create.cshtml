@@ -1,132 +1,211 @@
-﻿@using WeCharge.Model.DTO
-@{
-	Layout = "/Views/Shared/_AdminLayout.cshtml";
+﻿@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
-@model OrdersDTO
+@model OrdersViewModel
 <div class="content">
-	<div class="container-fluid">
-		<div class="card-header">
-			<h3 class="card-title"><b>Add New Order<b></h3>
-		</div>
-		<div class="card-body">
-			<form id="frmCreate">
-				<div class="row">
-					<div class="col-sm-3">
-						<label asp-for="@Model.USER_ID">User</label>
-						<select class="form-control" id="userID" asp-items="@(new SelectList(@ViewBag.Users,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
-					</div>
-					<div class="col-sm-3 offset-1">
-						<label asp-for="@Model.ADDRESS_ID">Address</label>
-						<select class="form-control" id="addressDD">
-							<option value="0">--Select Address--</option>
-						</select>
-					</div>
-					<div class="col-sm-3 offset-1">
-						<label asp-for="@Model.VENDOR_ID">Vendor</label>
-						<select class="form-control" id="vendorDD" asp-items="@(new SelectList(@ViewBag.VendorName,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<label asp-for="@Model.FUEL_TYPE_ID">Fuel Type</label>
-						<select class="form-control" id="fuelDD" asp-items="@(new SelectList(@ViewBag.Fuel,"ID", "FUEL_TYPE_NAME"))"><option value="0">-Select-</option></select>
-					</div>
-					<div class="col-sm-3 offset-1">
-						<label asp-for="@Model.QUANTITY">Quantity</label>
-						<input asp-for="@Model.QUANTITY" id=quantitytxt type="number" class="form-control ">
-					</div>
-					<div class="col-sm-3 offset-1">
-						<label asp-for="@Model.PRICE">Price</label>
-						<input asp-for="@Model.PRICE" id=priceDD type="number" class="form-control" readonly>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3">
-						<label asp-for="@Model.TIME_SLOT_ID">Time Slot</label>
-						<select class="form-control" id="TimeSlotDD" asp-items="@(new SelectList(@ViewBag.TimeSlot,"ID", "TimeSlot"))"><option value="0">-Select-</option></select>
-					</div>
-					<div class="col-sm-3 offset-1">
-						<label asp-for="@Model.PAYMENT_MODE_ID">Payment Mode</label>
-						<select class="form-control" id="PaymentModeDD" asp-items="@(new SelectList(@ViewBag.PaymentMode,"ID", "MODE"))"><option value="0">-Select-</option></select>
+    <div class="container-fluid">
+        <div class="card-header">
+            <h3 class="card-title"><b>Add New Order<b></h3>
+        </div>
+        <div class="card-body">
+            <form id="frmCreate">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label asp-for="@Model.USER_ID">User</label>
+                        <select class="form-control" id="userID" asp-items="@(new SelectList(@ViewBag.Users,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.ADDRESS_ID">Address</label>
+                        <select class="form-control" id="addressDD">
+                            <option value="0">--Select Address--</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.VENDOR_ID">Vendor</label>
+                        <select class="form-control" id="vendorDD" asp-items="@(new SelectList(@ViewBag.VendorName,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label asp-for="@Model.FUEL_TYPE_ID">Fuel Type</label>
+                        <select class="form-control" id="fuelDD" asp-items="@(new SelectList(@ViewBag.Fuel,"ID", "FUEL_TYPE_NAME"))"><option value="0">-Select-</option></select>
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.QUANTITY">Quantity</label>
+                        <input asp-for="@Model.QUANTITY" id=quantitytxt type="number" class="form-control ">
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.PRICE">Price</label>
+                        <input asp-for="@Model.PRICE" id=priceDD type="number" class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label asp-for="@Model.TIME_SLOT_ID">Time Slot</label>
+                        <select class="form-control" id="TimeSlotDD" asp-items="@(new SelectList(@ViewBag.TimeSlot,"ID", "TimeSlot"))"><option value="0">-Select-</option></select>
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.PAYMENT_MODE_ID">Payment Mode</label>
+                        <select class="form-control" id="PaymentModeDD" asp-items="@(new SelectList(@ViewBag.PaymentMode,"ID", "MODE"))"><option value="0">-Select-</option></select>
 
-					</div>
-					<div class="col-sm-3 offset-1">
-						<label asp-for="@Model.ASSET_TYPE_ID">Asset</label>
-						<select class="form-control" id="assetDD">
-							<option value="0">--Select Asset--</option>
-						</select>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 mt-4">
-						<button type="button" id="btnCreate" class="btn btn-success">Submit</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.ASSET_TYPE_ID">Asset</label>
+                        <select class="form-control" id="assetDD">
+                            <option value="0">--Select Asset--</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.DATE_OF_DELIVERY">DATE OF DELIVERY</label>
+                        <input type="date" id="dateofDelivery" nclass="form-control">
+                    </div>
+
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.BILLING_ADDRESS">Billing Address</label>
+                        <textarea id="billingAddressTxtArea" disabled class="form-control" rows="4" cols="50">
+                        </textarea>
+                    </div>
+                    <div class="col-sm-3 offset-1">
+                        <label asp-for="@Model.ORDER_STATUS">Status</label>
+                        <select name="CANCELLED" id="orderStatus">
+                            <option value="PENDING">PENDING</option>
+                            <option value="SUCCESS">SUCCESS</option>
+                            <option value="REJECTED">REJECTED</option>
+                            <option value="CANCELLED">CANCELLED</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mt-4">
+                        <button type="button" id="btnCreate" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 @section scripts {
-	<script src="~/JS/Manage-Orders.js"></script>
-<script>
-				$("#userID").change(function () {
-					var val = ($('option:selected', $(this)).val());
-					$.ajax({
-						url: "/Orders/GetUserAddress/" + val,
-						cache: false,
-						success: function (reponse) {
-							$.each(reponse, function (data, value) {
-								$("#addressDD").append($("<option></option>").val(value.id).html(value.address + ', ' + value.addresS_PINCODE));
-							});
-						}
-					});
-				});
+    <script src="~/JS/Manage-Orders.js"></script>
+
+    <script>
+
+        $("#userID").change(function () {
+            var val = ($('option:selected', $(this)).val());
+            $.ajax({
+                url: "/Orders/GetUserAddress/" + val,
+                cache: false,
+                success: function (reponse) {
+                    $.each(reponse, function (data, value) {
+                        $("#addressDD").append($("<option></option>").val(value.id).html(value.address + ', ' + value.addresS_PINCODE));
+                    });
+                    var userIdVal = $('#userID').val();
+                    var fuelId = ($('option:selected', $(this)).val());
+                    if (userIdVal > 0 && fuelId > 0) {
+                        getAssets(userIdVal, fuelId)
+                    }
+                    var addressId = $("#addressDD").val();
+                    if (userIdVal > 0 && addressId > 0) {
+                        getBillingAddress(userIdVal, addressId);
+                    }
+                }
+            });
+        });
+
+        $("#addressDD").change(function () {
+            var userIdVal = $('#userID').val();
+            var addressId = ($('option:selected', $(this)).val());
+            if (addressId > 0 && userIdVal > 0) {
+                getBillingAddress(userIdVal, addressId)
+            }
+        });
+
+        $("#fuelDD").change(function () {
+            var userIdVal = $('#userID').val();
+            var fuelId = ($('option:selected', $(this)).val());
+            if (userIdVal > 0 && fuelId > 0) {
+                getAssets(userIdVal, fuelId)
+            }
+        });
 
 
-				$("#fuelDD").change(function () {
-				var userIdVal = $('#userID').val();
-				var fuelId = ($('option:selected', $(this)).val());
-				$.ajax({
-					url: `/Orders/GetAssets/`,
-					data: {
-						userId: userIdVal,
-						fuelTypeId: fuelId,
-					},
-					success: function (data) {
-						console.log(data);
-						if (data != null) {
-						$.each(data, function (data, value) {
-								$("#assetDD").append($("<option></option>").val(value.id).html(value.equipmenT_NAME));
-							})
-						}
-					}
-				  });
-			});
+        $("#quantitytxt").keyup(function () {
+            var vendorIdVal = $('#vendorDD').val();
+            var fuelTypeId = $('#fuelDD').val();
+            var quantityVal = $('#quantitytxt').val();
+            getFuelPrice(vendorIdVal, fuelTypeId, quantityVal)
+        });
+
+        $("#fuelDD").change(function () {
+            var vendorIdVal = $('#vendorDD').val();
+            var fuelTypeId = $('#fuelDD').val();
+            var quantityVal = $('#quantitytxt').val();
+            getFuelPrice(vendorIdVal, fuelTypeId, quantityVal)
+        });
+
+        //functionsss
+        function getBillingAddress(addressIdval, userIdVal) {
+            $.ajax({
+                url: `/Orders/GetBillingAddress/`,
+                data: {
+                    adressId: userIdVal,
+                    userId: addressIdval,
+                },
+                success: function (data) {
+                    console.log(data);
+                    debugger;
+                    if (data != false) {
+                        var getaddress = $('#addressDD option:selected').text()
+                        $('#billingAddressTxtArea').val(getaddress);
+                    }
+                    else {
+                        $('#billingAddressTxtArea').val('')
+                        $('#billingAddressTxtArea').prop("disabled", false);
+
+                    }
+                }
+            });
+        }
+
+        function getAssets(userIdVal, fuelId) {
+            $.ajax({
+                url: `/Orders/GetAssets/`,
+                data: {
+                    userId: userIdVal,
+                    fuelTypeId: fuelId,
+                },
+                success: function (data) {
+                    console.log(data);
+                    if (data != null) {
+                        $.each(data, function (data, value) {
+                            $("#assetDD").append($("<option></option>").val(value.id).html(value.equipmenT_NAME));
+                        })
+                    }
+                }
+            });
+        }
 
 
-			$( "#quantitytxt" ).change(function() {
-				var vendorIdVal = $('#vendorDD').val();
-				var fuelTypeId = $('#fuelDD').val();
-				var quantityVal = $('#quantitytxt').val();
-					$.ajax({
-					url: `/Orders/GetFuelPrice/`,
-					data: {
-						vendorId: vendorIdVal,
-						fuelTypeId: fuelTypeId,
-						quantity: quantityVal,
-					},
-					success: function (data) {
-						console.log(data);
-						if (data != null) {
-								$('#priceDD').val(data.price)
-						}
-					}
-				  });
-			});
+        function getFuelPrice(vendorIdVal, fuelTypeId, quantityVal) {
+            $.ajax({
+                url: `/Orders/GetFuelPrice/`,
+                data: {
+                    vendorId: vendorIdVal,
+                    fuelTypeId: fuelTypeId,
+                    quantity: quantityVal,
+                },
+                success: function (data) {
+                    console.log(data);
+                    if (data != null) {
+                        $('#priceDD').val(data.price)
+                    }
+                }
+            });
+        }
 
+    </script>
 
-</script>
 }
-<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

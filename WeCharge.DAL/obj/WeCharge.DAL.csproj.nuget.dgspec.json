@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {}
+    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
         "projectName": "WeCharge.DAL",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+        "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -77,17 +77,17 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

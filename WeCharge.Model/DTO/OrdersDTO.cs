@@ -24,6 +24,7 @@ namespace WeCharge.Model.DTO
         public int	TIME_SLOT_ID { get; set; }
         public decimal	DISCOUNT { get; set; }
         public int	PAYMENT_MODE_ID { get; set; }
+        public DateTime DATE_OF_DELIVERY { get; set; }
         public int	COUPON_ID { get; set; }
         public int	ASSET_TYPE_ID { get; set; }
         public string	ORDER_STATUS { get; set; }
@@ -32,6 +33,7 @@ namespace WeCharge.Model.DTO
         public string	CREATED_BY { get; set; }
         public DateTime CREATED_DATE { get; set; }
         public string	MODIFIED_BY { get; set; }
+        public string VENDOR_NAME { get; set; }
         public DateTime MODOFIED_DATE { get; set; }
         public string FUEL_TYPE_NAME { get; set; }
         //public TimeOnly TIME_SLOT_FROM {  get; set; }

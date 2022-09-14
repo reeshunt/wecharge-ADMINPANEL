@@ -3,6 +3,7 @@ using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using WeCharge.BAL.Services.Implementation;
 using WeCharge.BAL.Services.Interface;
+using WeCharge.Model;
 using WeCharge_AdminPanel.Models;
 
 namespace WeCharge_AdminPanel.Controllers
@@ -49,12 +50,35 @@ namespace WeCharge_AdminPanel.Controllers
         }
 
         public async Task<IActionResult> AddOrder(OrdersViewModel ordersViewModel)
+
         {
             try
             {
+                var proMap = _mapper.Map<Orders>(ordersViewModel);
+                OrderId orderIdModel = new();
+                var getOrderId = await _ordersServices.GetAllOrderId();
+                if (getOrderId.Any())
+                {
+                    var orderid = getOrderId.LastOrDefault().ORDER_ID;
+                    orderIdModel.ORDER_ID = orderid + 1;
+                    await _ordersServices.AddOrderId(orderIdModel);
+                }
+                var myParams = new DynamicParameters();
+                myParams.Add("@userId", ordersViewModel.USER_ID);
+                var getUserAddress = await _accountServices.GetByIdAdress(ordersViewModel.ADDRESS_ID);
+                if (getUserAddress != null)
+                {
+                    proMap.DELIVERY_ADDRESS = getUserAddress.ADDRESS + ", " + getUserAddress.ADDRESS_PINCODE;
+                }
 
-              
-                return View();
+            
+
+                proMap.ORDER_ID = (int)orderIdModel.ORDER_ID;
+                proMap.CREATED_DATE = DateTime.Now;
+                proMap.MODOFIED_DATE = DateTime.Now;
+                proMap.ORDER_DATETIME = DateTime.Now;
+                await _ordersServices.AddOrder(proMap);
+                return Json(true);
             }
             catch (Exception ex)
             {
@@ -88,6 +112,33 @@ namespace WeCharge_AdminPanel.Controllers
             }
         }
 
+        public async Task<JsonResult> GetBillingAddress(int adressId, int userId)
+        {
+
+            try
+            {
+                var myParams = new DynamicParameters();
+                myParams.Add("@userId", userId);
+                var getTheData = await _accountServices.GetByQuerryForAddress("wecharge.USP_Get_Users_Address", myParams);
+                if (getTheData != null)
+                {
+                    Address address = getTheData.FirstOrDefault(x => x.ID == adressId);
+                    if (address != null)
+                    {
+                        if (address.IS_BILLING_ADDRESS == true)
+                        {
+                            return Json(true);
+                        }
+                    }
+                }
+                return Json(false);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         /// <summary>
         /// get the assets
         /// </summary>
@@ -99,8 +150,8 @@ namespace WeCharge_AdminPanel.Controllers
             try
             {
                 var myParams = new DynamicParameters();
-                myParams.Add("@FUEL_ID", userId);
-                myParams.Add("@USER_ID", fuelTypeId);
+                myParams.Add("@FUEL_ID", fuelTypeId);
+                myParams.Add("@USER_ID", userId);
                 var getTheData = await _assetServices.GetALlByQuerry("wecharge.USP_Get_Asset_By_UserId_and_FuelID_Admin", myParams);
                 if (getTheData != null)
                 {
@@ -120,7 +171,7 @@ namespace WeCharge_AdminPanel.Controllers
             {
                 var myParams = new DynamicParameters();
                 myParams.Add("@FUEL_ID", fuelTypeId);
-                myParams.Add("@VENDOR_ID",  vendorId);
+                myParams.Add("@VENDOR_ID", vendorId);
                 myParams.Add("@COUPON_CODE", coupanCode);
                 myParams.Add("@QUANTITY", quantity);
                 var getTheData = await _assetServices.GetByQuerryAssets("wecharge.USP_Get_Fuel_Price_By_VendorId", myParams);
@@ -150,7 +201,7 @@ namespace WeCharge_AdminPanel.Controllers
                 myParams.Add("@take", param.iDisplayLength);
                 myParams.Add("@search_key", param.sSearch);
                 var displayResult = await _ordersServices.GetDisplayByQuerry("wecharge.USP_GetORDERS_Datatable", myParams).ConfigureAwait(true);
-                foreach(var item in displayResult)
+                foreach (var item in displayResult)
                 {
                     item.ORDER_DATETIME_STR = item.ORDER_DATETIME.ToString("dd/MM/yyyy");
                 }

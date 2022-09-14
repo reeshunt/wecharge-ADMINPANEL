@@ -14,10 +14,14 @@ namespace WeCharge.BAL.Services.Interface
     public class OrdersServices : IOrdersServices
     {
         private readonly IRepository<OrdersDTO> _viewrepository;
+        private readonly IRepository<Orders> _repository;
+        private readonly IRepository<OrderId> _repository1;
         private readonly IRepository<DashboardCountDTO> _dashboardrepository;
 
-        public OrdersServices(IRepository<OrdersDTO> viewrepository, IRepository<DashboardCountDTO> dashboardRepository)
+        public OrdersServices(IRepository<OrdersDTO> viewrepository, IRepository<OrderId> repository1, IRepository<Orders> repository, IRepository<DashboardCountDTO> dashboardRepository)
         {
+            _repository1 = repository1;
+            _repository = repository;
             _viewrepository = viewrepository;
             _dashboardrepository = dashboardRepository;
         }
@@ -29,6 +33,31 @@ namespace WeCharge.BAL.Services.Interface
         public async Task<DashboardCountDTO> GetDashboardCount(string procedureName, DynamicParameters param)
         {
             return await _dashboardrepository.GetByQuery(procedureName, param);
+        }
+
+        public async Task<List<OrderId>> GetAllOrderId()
+        {
+            return (List<OrderId>)await _repository1.GetAllAsync().ConfigureAwait(false);
+        }
+
+        public async Task<int> AddOrder(Orders orders)
+        {
+            return await _repository.AddAsync(orders);
+        }
+
+        public async Task<bool> UpdateOrder(Orders orders)
+        {
+            return await _repository.UpdateAsync(orders);
+        }
+
+        public async Task<Orders> GetByID(int id)
+        {
+            return await _repository.GetByIdAsync(id);
+        }
+
+        public async Task<int> AddOrderId(OrderId orderId)
+        {
+            return await _repository1.AddAsync(orderId);
         }
     }
 }

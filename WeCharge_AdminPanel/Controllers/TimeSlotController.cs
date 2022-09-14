@@ -1,24 +1,90 @@
-﻿using Dapper;
+﻿using AutoMapper;
+using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using WeCharge.BAL.Services.Implementation;
+using WeCharge.BAL.Services.Interface;
+using WeCharge.Model;
 using WeCharge_AdminPanel.Models;
 
 namespace WeCharge_AdminPanel.Controllers
 {
-	public class TimeSlotController : Controller
-	{
+    public class TimeSlotController : Controller
+    {
         private readonly ILogger<TimeSlotController> _logger;
-        private readonly ITimeSlotServices _timeSlotServices ;
-        public TimeSlotController(ILogger<TimeSlotController> logger, ITimeSlotServices timeSlotServices)
+        private readonly ITimeSlotServices _timeSlotServices;
+        private readonly IMapper _mapper;
+        public TimeSlotController(ILogger<TimeSlotController> logger, IMapper mapper, ITimeSlotServices timeSlotServices)
         {
+            _mapper = mapper;
             _timeSlotServices = timeSlotServices;
             _logger = logger;
         }
 
         public IActionResult Index()
-		{
-			return View();
-		}
+        {
+            return View();
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> CreateTimeSlot(TimeSlotViewModel timeSlotViewModel)
+        {
+            try
+            {
+                timeSlotViewModel.CREATED_BY = "SUPERADMIN";
+                timeSlotViewModel.IS_ACTIVE = true;
+                timeSlotViewModel.CREATED_DATE = DateTime.Now;
+                timeSlotViewModel.MODOFIED_DATE = DateTime.Now;
+                var proMap = _mapper.Map<TimeSlot>(timeSlotViewModel);
+                await _timeSlotServices.Add(proMap);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+        }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            try
+            {
+                var timeslotContent = await _timeSlotServices.GetById(id);
+                var proMap = _mapper.Map<TimeSlotViewModel>(timeslotContent);
+                return View(proMap);
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+
+        public async Task<IActionResult> UpdateTimeSlot(TimeSlotViewModel timeSlotViewModel)
+        {
+            try
+            {
+                var getTimeSlot = await _timeSlotServices.GetById(timeSlotViewModel.ID);
+                getTimeSlot.MODIFIED_BY = "SUPERADMIN";
+                getTimeSlot.MODOFIED_DATE = DateTime.Now;
+                getTimeSlot.TIME_SLOT_TO = timeSlotViewModel.TIME_SLOT_TO;
+                getTimeSlot.TIME_SLOT_FROM = timeSlotViewModel.TIME_SLOT_FROM;
+                await _timeSlotServices.Update(getTimeSlot);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+        }
 
         public async Task<IActionResult> GetAllTimeSlot(JqueryDatatableParam param)
         {
@@ -44,6 +110,28 @@ namespace WeCharge_AdminPanel.Controllers
                 throw;
             }
 
+        }
+
+        public async Task<IActionResult> Delete(int Id)
+        {
+            try
+            {
+                var getUserData = await _timeSlotServices.GetById(Id);
+                if (getUserData != null)
+                {
+                    getUserData.IS_ACTIVE = false;
+                    var status = await _timeSlotServices.Delete(getUserData);
+                    if (status)
+                    {
+                        return Json(true);
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

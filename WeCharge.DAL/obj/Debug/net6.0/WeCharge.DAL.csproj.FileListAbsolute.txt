@@ -118,3 +118,18 @@ C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Deb
 C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\refint\WeCharge.DAL.dll
 C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.pdb
 C:\Users\Admin\source\repos\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\ref\WeCharge.DAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.deps.json
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.AssemblyReference.cache
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.AssemblyInfoInputs.cache
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.AssemblyInfo.cs
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.CoreCompileInputs.cache
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.CopyComplete
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\refint\WeCharge.DAL.dll
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.pdb
+D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\ref\WeCharge.DAL.dll
