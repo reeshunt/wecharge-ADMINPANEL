@@ -93,3 +93,15 @@ D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\
 D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\refint\WeCharge.Model.dll
 D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb
 D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.deps.json
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\bin\Debug\net6.0\WeCharge.Model.pdb
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.AssemblyReference.cache
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfoInputs.cache
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.AssemblyInfo.cs
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.csproj.CoreCompileInputs.cache
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\refint\WeCharge.Model.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\WeCharge.Model.pdb
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.Model\obj\Debug\net6.0\ref\WeCharge.Model.dll

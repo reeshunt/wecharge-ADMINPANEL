@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <label asp-for="@Model.USER_ID">User</label>
-                        <select class="form-control" id="userID" asp-items="@(new SelectList(@ViewBag.Users,"ID", "FULL_NAME"))"><option value="0">-Select-</option></select>
+                        <select class="form-control" id="userID" asp-items="@(new SelectList(@ViewBag.Users,"ID", "EMAIL"))"><option value="0">-Select-</option></select>
                     </div>
                     <div class="col-sm-3 offset-1">
                         <label asp-for="@Model.ADDRESS_ID">Address</label>
@@ -58,19 +58,19 @@
 
                 </div>
                 <div class="row">
-                    <div class="col-sm-3 offset-1">
+                    <div class="col-sm-3">
                         <label asp-for="@Model.DATE_OF_DELIVERY">DATE OF DELIVERY</label>
-                        <input type="date" id="dateofDelivery" nclass="form-control">
+                        <input type="date" id="dateofDelivery" class="form-control datePicker">
                     </div>
 
                     <div class="col-sm-3 offset-1">
                         <label asp-for="@Model.BILLING_ADDRESS">Billing Address</label>
-                        <textarea id="billingAddressTxtArea" disabled class="form-control" rows="4" cols="50">
+                        <textarea id="billingAddressTxtArea" class="form-control text" rows="4" cols="50" style="background:white;">
                         </textarea>
                     </div>
                     <div class="col-sm-3 offset-1">
                         <label asp-for="@Model.ORDER_STATUS">Status</label>
-                        <select name="CANCELLED" id="orderStatus">
+                        <select name="CANCELLED" id="orderStatus" class="form-control">
                             <option value="PENDING">PENDING</option>
                             <option value="SUCCESS">SUCCESS</option>
                             <option value="REJECTED">REJECTED</option>
@@ -92,6 +92,18 @@
     <script src="~/JS/Manage-Orders.js"></script>
 
     <script>
+        function notify(msgTitle, msgBody) {
+            Toast.fire({
+                icon: msgTitle,
+                title: msgBody
+            })
+        }
+        var Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
 
         $("#userID").change(function () {
             var val = ($('option:selected', $(this)).val());
@@ -99,6 +111,12 @@
                 url: "/Orders/GetUserAddress/" + val,
                 cache: false,
                 success: function (reponse) {
+                    if (reponse.length == 0) {
+                        notify('error', 'User Address not Found!');
+                        return;
+                    }
+
+                    debugger;
                     $.each(reponse, function (data, value) {
                         $("#addressDD").append($("<option></option>").val(value.id).html(value.address + ', ' + value.addresS_PINCODE));
                     });
@@ -139,12 +157,12 @@
             getFuelPrice(vendorIdVal, fuelTypeId, quantityVal)
         });
 
-        $("#fuelDD").change(function () {
+        @*$("#fuelDD").change(function () {
             var vendorIdVal = $('#vendorDD').val();
             var fuelTypeId = $('#fuelDD').val();
             var quantityVal = $('#quantitytxt').val();
             getFuelPrice(vendorIdVal, fuelTypeId, quantityVal)
-        });
+        });*@
 
         //functionsss
         function getBillingAddress(addressIdval, userIdVal) {
@@ -155,8 +173,11 @@
                     userId: addressIdval,
                 },
                 success: function (data) {
-                    console.log(data);
-                    debugger;
+                    if (reponse.length == 0) {
+                        notify('error', 'Billing Address not Found!');
+                        return;
+                    }
+
                     if (data != false) {
                         var getaddress = $('#addressDD option:selected').text()
                         $('#billingAddressTxtArea').val(getaddress);
@@ -198,14 +219,17 @@
                     quantity: quantityVal,
                 },
                 success: function (data) {
+                    debugger;
+                    if (data.length == 0) {
+                        notify('error', ' Price not Found!');
+                        return;
+                    }
                     console.log(data);
                     if (data != null) {
                         $('#priceDD').val(data.price)
                     }
                 }
             });
-        }
-
-    </script>
+        }</script>
 
 }

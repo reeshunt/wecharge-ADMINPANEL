@@ -151,3 +151,20 @@ D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\ne
 D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\refint\WeCharge.BAL.dll
 D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.pdb
 D:\Projects\New folder\Tech-Automations\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\ref\WeCharge.BAL.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.BAL.deps.json
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.BAL.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.BAL.pdb
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.DAL.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.Model.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.DAL.pdb
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\bin\Debug\net6.0\WeCharge.Model.pdb
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.csproj.AssemblyReference.cache
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.AssemblyInfoInputs.cache
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.AssemblyInfo.cs
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.csproj.CoreCompileInputs.cache
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.csproj.CopyComplete
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\refint\WeCharge.BAL.dll
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\WeCharge.BAL.pdb
+C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.BAL\obj\Debug\net6.0\ref\WeCharge.BAL.dll

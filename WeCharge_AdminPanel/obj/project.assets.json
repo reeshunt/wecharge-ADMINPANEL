@@ -9778,19 +9778,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\91875\\.nuget\\packages\\": {}
+    "C:\\Users\\rees\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
       "projectName": "WeCharge_AdminPanel",
-      "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
-      "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+      "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9804,8 +9804,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
-              "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+            "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+              "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
             }
           }
         }

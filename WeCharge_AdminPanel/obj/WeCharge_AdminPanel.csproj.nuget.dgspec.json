@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {}
+    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
         "projectName": "WeCharge.BAL",
-        "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
-        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
+        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
-                "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
+              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
               },
-              "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -72,17 +72,17 @@
         }
       }
     },
-    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
         "projectName": "WeCharge.DAL",
-        "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
-        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -145,17 +145,17 @@
         }
       }
     },
-    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
-        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,17 +210,17 @@
         }
       }
     },
-    "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {
+    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
         "projectName": "WeCharge_AdminPanel",
-        "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
-        "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+        "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,8 +234,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
-                "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
               }
             }
           }

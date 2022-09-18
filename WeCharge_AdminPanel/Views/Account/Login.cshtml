@@ -8,42 +8,42 @@
         <h2 class="text-center">Admin Login</h2>
         <hr />
         <form asp-action="Login" id="formvalidate">
-							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-							<div class="mb-4 input_text_sec">
-								<label asp-for="Email" class="form-label"></label>
-								<input asp-for="Email" class="form-control"  placeholder="Username" />
-								<span asp-validation-for="Email" class="text-danger"></span>
-							</div>
-							<span class="lighting"></span>
-							<div class="mb-4 input_text_sec">
-								<label asp-for="Password" class="form-label"></label>
-								@{
-									if(@Model!=null){
-										if (@Model.Password != null)
-										{
-											<input asp-for="Password" class="form-control" placeholder="Password" value="@Model.Password" type="password"/>
-										}
-										else
-										{
-											<input asp-for="Password" class="form-control" placeholder="Password" type="password" />
-										}
-									}
-									else
-									{
-										<input asp-for="Password" class="form-control" placeholder="Password" type="password" />
-									}
-								}		
-								<span asp-validation-for="Password" class="text-danger"></span>
-							</div>
-							<span class="lighting"></span>
-							<div class="mb-4 checkbox_sec">
-								<input type="checkbox" asp-for="RememberMe" class="form-check-input remember" id="remember" />
-								<label for="remember" asp-for="RememberMe" class="form-label ml-2">Remember Me</label>								
-							</div>
-							<div class="d-grid Sign_btn">
-								<button type="submit" class="btn btn-primary">Sign in</button>
-							</div>
-						</form>
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="mb-4 input_text_sec">
+				<label asp-for="Email" class="form-label"></label>
+				<input asp-for="Email" class="form-control"  placeholder="Username" />
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+			<span class="lighting"></span>
+			<div class="mb-4 input_text_sec">
+				<label asp-for="Password" class="form-label"></label>
+				@{
+					if(@Model!=null){
+						if (@Model.Password != null)
+						{
+							<input asp-for="Password" class="form-control" placeholder="Password" value="@Model.Password" type="password"/>
+						}
+						else
+						{
+							<input asp-for="Password" class="form-control" placeholder="Password" type="password" />
+						}
+					}
+					else
+					{
+						<input asp-for="Password" class="form-control" placeholder="Password" type="password" />
+					}
+				}		
+				<span asp-validation-for="Password" class="text-danger"></span>
+			</div>
+			<span class="lighting"></span>
+			<div class="mb-4 checkbox_sec">
+				<input type="checkbox" asp-for="RememberMe" class=" remember" id="remember" />
+				<label for="remember" asp-for="RememberMe" class="form-label ml-2">Remember Me</label>								
+			</div>
+			<div class="d-grid Sign_btn">
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</div>
+		</form>
 
         <!-- /.social-auth-links -->
     </div>

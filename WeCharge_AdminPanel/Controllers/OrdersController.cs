@@ -35,7 +35,10 @@ namespace WeCharge_AdminPanel.Controllers
         {
             try
             {
-                ViewBag.Users = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_Users_Customers", null);
+                var UserList = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_Users_Customers", null);
+                var Users = UserList.ToList().Select(x=>new Users {ID = x.ID,EMAIL = x.EMAIL}).Distinct(); 
+                ViewBag.Users = Users;
+
                 ViewBag.VendorName = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_ActiveVendors", null);
                 ViewBag.Fuel = await _reserveServices.GetAllFuel();
                 ViewBag.TimeSlot = await _reserveServices.GetDisplayByQuerry("wecharge.USP_Get_Time_Slot_Admin", null);

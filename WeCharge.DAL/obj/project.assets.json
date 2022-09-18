@@ -804,19 +804,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\91875\\.nuget\\packages\\": {}
+    "C:\\Users\\rees\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
       "projectName": "WeCharge.DAL",
-      "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
-      "packagesPath": "C:\\Users\\91875\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+      "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+      "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\91875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -830,8 +830,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-              "projectPath": "D:\\Projects\\New folder\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+            "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+              "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
             }
           }
         }
