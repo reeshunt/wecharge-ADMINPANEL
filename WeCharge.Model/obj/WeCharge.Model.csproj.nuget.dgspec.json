@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {}
+    "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "outputPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",

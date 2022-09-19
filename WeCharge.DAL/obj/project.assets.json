@@ -809,11 +809,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
       "projectName": "WeCharge.DAL",
-      "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+      "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
       "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+      "outputPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -830,8 +830,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-              "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+            "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+              "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
             }
           }
         }
@@ -878,13 +878,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

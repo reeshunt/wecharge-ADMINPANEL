@@ -65,27 +65,13 @@ Layout = "/Views/Shared/_AdminLayout.cshtml";
 
         }
 
-    $("#email").on("change blur ",function () {
-        var val = $('#email').val();
-        $.ajax({
-            url: "/User/CheckEmail",
-            data:{val :val},
-            cache: false,
-            success: function (response) {
-                console.log(response)
-                if (response==true) {
-                    notify('error', 'Email Already Exists!');
-                    $('.submitBtn').prop('disabled',true)
-                    return;
-                }else{
-                    $('.submitBtn').prop('disabled', false)
-                }
-
-            }
-        });
+    $("#email,#mobile").on("change blur ",function () {
+        validateMobile();
+        validateEmail();
     });
 
-    $("#mobile").on("change blur ", function () {
+    
+    function validateMobile(){
         var val = $('#mobile').val();
         $.ajax({
             url: "/User/CheckMobile",
@@ -103,5 +89,24 @@ Layout = "/Views/Shared/_AdminLayout.cshtml";
 
             }
         });
-    });
+    }
+    function validateEmail(){
+        var val = $('#email').val();
+        $.ajax({
+            url: "/User/CheckEmail",
+            data: { val: val },
+            cache: false,
+            success: function (response) {
+                console.log(response)
+                if (response == true) {
+                    notify('error', 'Email Already Exists!');
+                    $('.submitBtn').prop('disabled', true)
+                    return;
+                } else {
+                    $('.submitBtn').prop('disabled', false)
+                }
+
+            }
+        });
+    }
 </script>

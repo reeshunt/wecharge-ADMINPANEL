@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {}
+    "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+    "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
         "projectName": "WeCharge.BAL",
-        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
+        "outputPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
-                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
+              "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+                "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
               },
-              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+    "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
         "projectName": "WeCharge.DAL",
-        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+        "outputPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-                "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+              "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+    "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectUniqueName": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "projectName": "WeCharge.Model",
-        "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+        "outputPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
