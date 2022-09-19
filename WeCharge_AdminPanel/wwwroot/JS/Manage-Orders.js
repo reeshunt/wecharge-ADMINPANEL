@@ -3,6 +3,7 @@
     $("#Refresh").click(function (e) {
         $('#tblOrders').DataTable().ajax.reload(null, false);
     });
+    
 
     var table = $('#tblOrders')
         .DataTable({
@@ -11,7 +12,7 @@
             "bProcessing": true,
             "responsive": true,
             "bSearchable": true,
-            "ordering": false,
+            "ordering": true,
             "searching": true,
             "lengthChange": true,
             "order": [[0, 'asc']],
@@ -69,18 +70,27 @@
                 {
                     "data": "createD_DATE",
                     "autoWidth": true,
-                    "searchable": false
+                    "searchable": false,
+                    "render": function (data) {
+                        var date = new Date(data);
+                        var month = date.getMonth() + 1;
+                        return (month.toString().length > 1 ? month : "0" + month) + "/" + date.getDate() + "/" + date.getFullYear();
+                    }
                 },
                 {
                     "data": "modofieD_DATE",
                     "autoWidth": true,
-                    "searchable": false
+                    "searchable": false,
+                    "render": function (data) {
+                        var date = new Date(data);
+                        var month = date.getMonth() + 1;
+                        return (month.toString().length > 1 ? month : "0" + month) + "/" + date.getDate() + "/" + date.getFullYear();
+                    }
                 },
                 {
-                    "orderable": false,
+                    "orderable": true,
                     "autoWidth": true,
                     render: function (data, type, row) {
-                        console.log(data)
                         return `<div>
                                     <button type="button" class="btn btn-sm btn-info mr-2 btnEdit" data-key="${row.id}">Edit</button>
                                     <button type="button" class="btn btn-sm btn-danger btnDelete" data-key="${row.id}">Delete</button>
@@ -93,6 +103,8 @@
                 { "width": "50%", "targets": [1] }
             ],
         });
+
+    
 
 
     $(document)

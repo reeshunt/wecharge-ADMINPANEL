@@ -24,17 +24,55 @@ namespace WeCharge_AdminPanel.Controllers
 
         }
 
-        public Task<IActionResult> Add()
+        public IActionResult Add()
         {
             return View();
         }
 
-        public async Task<IActionResult> View()
+        public async Task<IActionResult> Index()
         {
             List<Users> userData = new List<Users>();
             userData = await _accountServices.GetAll().ConfigureAwait(false);
             return View(userData);
         }
+        public async Task<JsonResult> checkEmail(string val)
+        {
+            try
+            {
+                var myParams = new DynamicParameters();
+                myParams.Add("@emailId", val);
+                var exists = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_User_Email", myParams);
+                    if (exists != null)
+                {
+                    return Json(exists.Count()>0?true:false);
+                }
+                return Json(null);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+        
+        public async Task<JsonResult> CheckMobile(string val)
+        {
+            try
+            {
+                var myParams = new DynamicParameters();
+                myParams.Add("@mobile", val);
+                var exists = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_User_Mobile", myParams);
+                    if (exists != null)
+                {
+                    return Json(exists.Count()>0?true:false);
+                }
+                return Json(null);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
         [HttpGet]
         public async Task<IActionResult> CreateOrEditAsset(int? id)
         {

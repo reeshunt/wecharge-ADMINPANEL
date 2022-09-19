@@ -22,7 +22,7 @@ Layout = "/Views/Shared/_AdminLayout.cshtml";
                 </div>
                 <div class="col-sm">
                     <label for="email">Mobile</label>
-                    <input asp-for="@Model.MOBILE_NO" type="tel" class="form-control" id="mobile" placeholder="Enter your Mobile No.">
+                    <input asp-for="@Model.MOBILE_NO" type="tel" maxlength="10" class="form-control" id="mobile" placeholder="Enter your Mobile No.">
                 </div>
                 </div>
                 <div class="row">
@@ -32,15 +32,76 @@ Layout = "/Views/Shared/_AdminLayout.cshtml";
                             <option value="1">Individual</option>
                             <option value="2">Corporate</option>
                             <option value="3">Supplier</option>
+                            <option value="5">Delivery Boy</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 mt-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="submitBtn btn btn-primary">Submit</button>
                     </div>
                 </div>
           </form>
       </div>
    </div>
 </div>
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+      function notify(msgTitle, msgBody) {
+            Toast.fire({
+                icon: msgTitle,
+                title: msgBody
+            })
+        }
+        var Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
+        function disableSubmit(){
+
+        }
+
+    $("#email").on("change blur ",function () {
+        var val = $('#email').val();
+        $.ajax({
+            url: "/User/CheckEmail",
+            data:{val :val},
+            cache: false,
+            success: function (response) {
+                console.log(response)
+                if (response==true) {
+                    notify('error', 'Email Already Exists!');
+                    $('.submitBtn').prop('disabled',true)
+                    return;
+                }else{
+                    $('.submitBtn').prop('disabled', false)
+                }
+
+            }
+        });
+    });
+
+    $("#mobile").on("change blur ", function () {
+        var val = $('#mobile').val();
+        $.ajax({
+            url: "/User/CheckMobile",
+            data: { val: val },
+            cache: false,
+            success: function (response) {
+                console.log(response)
+                if (response == true) {
+                    notify('error', 'Mobile Already Exists!');
+                    $('.submitBtn').prop('disabled', true)
+                    return;
+                } else {
+                    $('.submitBtn').prop('disabled', false)
+                }
+
+            }
+        });
+    });
+</script>

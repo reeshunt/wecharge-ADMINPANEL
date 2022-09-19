@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+
+    @*<div class="col-sm-3">
+        <label>Filter By Vendor</label>
+        <select class="form-control select2-dropdown">
+        </select>
+    </div>
+    <div class="col-sm-3 offset-1">
+        <label>Filter By Status</label>
+        <select class="form-control select2-dropdown">
+        </select>
+    </div>
+    <div class="col-sm-2 ml-4 mt-4">
+        <button class="btn btn-primary">Filter</button>
+    </div>*@
+</div>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                         <div class="col-sm-12 mb-3">
+                            <a class="btn btn-success float-right" href="@Url.Action("Add","User")">Create</a>
+                        </div>
+                        <h3 class="card-title">Users List</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                            <div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"></div></div><div class="row">
+                                <div class="col-sm-12">
+                                    <table id="usersTable" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
+                                        <thead>
+                                            <tr>
+                                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending">Full Name</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" >Mobile No.</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" >Email</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" >Created Date</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" >Modified Date</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" >Profile Picture</th>
+@*                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" >Active</th>
+*@                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach(var data in Model)
+                                            {
+                                                <tr class="odd">
+                                                    <td class="dtr-control sorting_1" tabindex="0">@data.FULL_NAME</td>
+                                                    <td>@data.MOBILE_NO</td>
+                                                    <td>@data.EMAIL.ToString().ToLower()</td>
+                                                    <td>
+                                                        @data.CREATED_DATE.ToString("dd/MM/yyyy")
+                                                    </td>
+                                                    <td>@data.MODOFIED_DATE.ToString("dd/MM/yyyy")</td>
+                                                    <td><img src="@data.IMAGE_PATH" alt="Profile Image" style="height:60px !important;width:60px !important"> </td>
+                                                    @*@if(@data.IS_ACTIVE==true){
+                                                        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                                    }else{
+                                                        <td><i class="fa fa-times" aria-hidden="true"></i></td>
+                                                    }*@
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+@section scripts {
+<script>
+
+    $('#usersTable').DataTable({
+            "autoWidth": false
+             "columns": [
+            { "width": "40%" },
+            { "width": "15%" },
+            { "width": "15%" },
+            { "width": "5%" },
+            { "width": "5%" },
+            { "width": "5%" },
+            { "width": "5%" },
+            { "width": "10%" },
+          ]
+
+    });
+</script>
+}
