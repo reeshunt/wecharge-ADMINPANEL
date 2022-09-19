@@ -31,6 +31,7 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+<<<<<<< HEAD
       "BCrypt.Net/0.1.0": {
         "type": "package",
         "compile": {
@@ -42,6 +43,15 @@
           "lib/net35/BCrypt.Net.dll": {
             "related": ".XML"
           }
+=======
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {}
+>>>>>>> origin/varun-dev
         }
       },
       "Dapper/2.0.123": {
@@ -3482,6 +3492,7 @@
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
+<<<<<<< HEAD
     "BCrypt.Net/0.1.0": {
       "sha512": "sST2w361Dxt9GGMfpOTiK50wXGV64Ybb1hiX3xjEWnhVYZNF43NuySGwADJa7X1R+bA53NsFR+tuDxcYiJeIOA==",
       "type": "package",
@@ -3493,6 +3504,37 @@
         "bcrypt.net.nuspec",
         "lib/net35/BCrypt.Net.XML",
         "lib/net35/BCrypt.Net.dll"
+=======
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
+>>>>>>> origin/varun-dev
       ]
     },
     "Dapper/2.0.123": {
@@ -9769,7 +9811,11 @@
     "net6.0": [
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+<<<<<<< HEAD
       "BCrypt.Net >= 0.1.0",
+=======
+      "BCrypt.Net-Next >= 4.0.3",
+>>>>>>> origin/varun-dev
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.8",
       "Microsoft.Extensions.DependencyInjection >= 6.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.8",
@@ -9778,19 +9824,37 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\rees\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\varung\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> origin/varun-dev
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
       "projectName": "WeCharge_AdminPanel",
       "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
       "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+=======
+      "projectUniqueName": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "projectName": "WeCharge_AdminPanel",
+      "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "packagesPath": "C:\\Users\\varung\\.nuget\\packages\\",
+      "outputPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+>>>>>>> origin/varun-dev
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\varung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> origin/varun-dev
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9804,8 +9868,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
               "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+=======
+            "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+              "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+>>>>>>> origin/varun-dev
             }
           }
         }
@@ -9828,9 +9897,15 @@
             "target": "Package",
             "version": "[11.0.0, )"
           },
+<<<<<<< HEAD
           "BCrypt.Net": {
             "target": "Package",
             "version": "[0.1.0, )"
+=======
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.0.3, )"
+>>>>>>> origin/varun-dev
           },
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
@@ -9868,7 +9943,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> origin/varun-dev
       }
     }
   },

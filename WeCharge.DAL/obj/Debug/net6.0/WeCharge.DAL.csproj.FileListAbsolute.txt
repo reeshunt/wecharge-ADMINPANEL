@@ -58,6 +58,7 @@ D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csp
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.dll
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\ref\WeCharge.DAL.dll
 D:\Rees\Work-2\EDU\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.pdb
+<<<<<<< HEAD
 D:\Education\New-test\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.deps.json
 D:\Education\New-test\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.dll
 D:\Education\New-test\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\ref\WeCharge.DAL.dll
@@ -148,3 +149,20 @@ C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.DAL\
 C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\refint\WeCharge.DAL.dll
 C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.pdb
 C:\Users\rees\Desktop\WeCharge-AdminPanelSourceCode\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\ref\WeCharge.DAL.dll
+=======
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.deps.json
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.dll
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.DAL.pdb
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.Model.dll
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\bin\Debug\net6.0\WeCharge.Model.pdb
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.AssemblyReference.cache
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.AssemblyInfoInputs.cache
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.AssemblyInfo.cs
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.CoreCompileInputs.cache
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.csproj.CopyComplete
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.dll
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\refint\WeCharge.DAL.dll
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\WeCharge.DAL.pdb
+D:\Varun\Docs\DemoApp\WeCharge_Admin\WeCharge.DAL\obj\Debug\net6.0\ref\WeCharge.DAL.dll
+>>>>>>> origin/varun-dev

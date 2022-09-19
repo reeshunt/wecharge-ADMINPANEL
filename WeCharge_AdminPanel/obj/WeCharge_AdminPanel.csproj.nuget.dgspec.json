@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {}
   },
   "projects": {
@@ -12,9 +13,27 @@
         "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
+=======
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {}
+  },
+  "projects": {
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "projectName": "WeCharge.BAL",
+        "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj",
+        "packagesPath": "C:\\Users\\varung\\.nuget\\packages\\",
+        "outputPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\obj\\",
+>>>>>>> origin/varun-dev
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\varung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> origin/varun-dev
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +47,19 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
                 "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
               },
               "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
                 "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+=======
+              "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+                "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
+              },
+              "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+>>>>>>> origin/varun-dev
               }
             }
           }
@@ -68,6 +95,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
@@ -80,9 +108,28 @@
         "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "projectName": "WeCharge.DAL",
+        "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj",
+        "packagesPath": "C:\\Users\\varung\\.nuget\\packages\\",
+        "outputPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.DAL\\obj\\",
+>>>>>>> origin/varun-dev
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\varung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> origin/varun-dev
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +143,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
                 "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+=======
+              "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+                "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+>>>>>>> origin/varun-dev
               }
             }
           }
@@ -141,6 +193,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
@@ -153,9 +206,28 @@
         "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "projectName": "WeCharge.Model",
+        "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj",
+        "packagesPath": "C:\\Users\\varung\\.nuget\\packages\\",
+        "outputPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.Model\\obj\\",
+>>>>>>> origin/varun-dev
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\varung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> origin/varun-dev
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -206,6 +278,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
@@ -218,9 +291,28 @@
         "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
         "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+        "projectName": "WeCharge_AdminPanel",
+        "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+        "packagesPath": "C:\\Users\\varung\\.nuget\\packages\\",
+        "outputPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+>>>>>>> origin/varun-dev
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\varung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> origin/varun-dev
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,8 +326,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
                 "projectPath": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+=======
+              "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
+                "projectPath": "D:\\Varun\\Docs\\DemoApp\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+>>>>>>> origin/varun-dev
               }
             }
           }
@@ -258,9 +355,15 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
+<<<<<<< HEAD
             "BCrypt.Net": {
               "target": "Package",
               "version": "[0.1.0, )"
+=======
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+>>>>>>> origin/varun-dev
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -298,7 +401,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> origin/varun-dev
         }
       }
     }
