@@ -109,7 +109,7 @@
 
 <div class="card card-primary">
     <div class="card-header">
-        <h3 class="card-title">Area Chart</h3>
+        <h3 class="card-title">Month Wise Chart For Earnings</h3>
         <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse">
                 <i class="fas fa-minus"></i>
@@ -122,12 +122,199 @@
     <div class="card-body">
         <div class="chart">
             <div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-            <canvas id="areaChart1" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 487px;" width="487" height="250" class="chartjs-render-monitor"></canvas>
+            <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 487px;" width="487" height="250" class="chartjs-render-monitor"></canvas>
         </div>
     </div>
+    <hr />
+    <div class="section p-2 mt-2">
+          <div class="table-responsive">
+        <h3>Recent Orders</h3>
+        <table id="tblOrders" class="table dt-responsive nowrap">
+            <thead>
+                <tr>
+                    <TH>ORDER ID</TH>
+                    <TH>DATE OF ORDER </TH>
+                    <TH>USER NAME </TH>
+                    <TH>FUEL TYPE </TH>
+                    <TH>PRICE</TH>
+                    <TH>ORDER STATUS </TH>
+                    <TH>VENDOR NAME </TH>
+                    <TH>ACTION </TH>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    </div>
+  
 
 </div>
+<script src="~/plugins/jquery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        loadGraph();
+        loadRecentOrderTable();
+        //$('#tblOrders').DataTable({
+        //    "lengthChange": false
+        //});
+    });
 
-    <script>
+
+
+    $("#Refresh").click(function (e) {
+        $('#tblOrders').DataTable().ajax.reload(null, false);
+    });
+
    
+
+    
+
+
+
+
+    function loadRecentOrderTable(){
+        var table = $('#tblOrders')
+            .DataTable({
+                "sAjaxSource": `/Orders/GetAllOrders/`,
+                "bServerSide": true,
+                "bProcessing": true,
+                 "paging": false,
+                "responsive": true,
+                "bSearchable": true,
+                "ordering": false,
+                "searching": false,
+                "lengthChange": false,
+                "order": [[0, 'asc']],
+                "language": {
+                    "emptyTable": "No record found.",
+                    "processing":
+                        '<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color:#2a2b2b;"></i><span class="sr-only">Loading...</span> '
+                },
+                "columns": [
+                    {
+                        "data": "ordeR_ID",
+                        "autoWidth": true,
+                        "searchable": false
+                    },
+                    {
+                        "data": "ordeR_DATETIME",
+                        "autoWidth": false,
+                        "width":"15%",
+                        "searchable": false,
+                        "render": function (data) {
+                            var date = new Date(data);
+                            var month = date.getMonth() + 1;
+                            return (month.toString().length > 1 ? month : "0" + month) + "/" + date.getDate() + "/" + date.getFullYear();
+                        }
+                    },
+                    {
+                        "data": "fulL_NAME",
+                        "autoWidth": true,
+                        "searchable": false
+                    },
+
+                    {
+                        "data": "fueL_TYPE_NAME",
+                        "autoWidth": true,
+                        "searchable": false
+                    },
+                    {
+                        "data": "price",
+                        "autoWidth": true,
+                        "searchable": false
+                    },
+                    {
+                        "data": "ordeR_STATUS",
+                        "autoWidth": true,
+                        "searchable": false
+                    },
+                    {
+                        "data": "vendoR_NAME",
+                        "autoWidth": true,
+                        "searchable": false
+                    },
+
+                    {
+                        "orderable": false,
+                        "autoWidth": true,
+                        render: function (data, type, row) {
+                            console.log(data)
+                            return `<div>
+                                        <button type="button" class="btn btn-sm btn-info mr-2 btnEdit" data-key="${row.id}">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-danger btnDelete" data-key="${row.id}">Delete</button>
+                                    </div>`;
+                        }
+                    },
+                ],
+                "fnRowCallback": function (nRow, aData, iDisplayIndex, iDisplayIndexFull) {
+                    console.log(aData)
+                    if (aData.ordeR_STATUS == "COMPLETED") {
+                        $('td:eq(5)', nRow).html('<b class="p-2" style="background-color: #00a65a !important;color:white !important;">COMPLETED</b>');
+                    }
+                    if (aData.ordeR_STATUS == "PENDING") {
+                        $('td:eq(5)', nRow).html('<b class="p-2" style="background-color: #f39c12 !important;color:white !important;">COMPLETED</b>');
+                    }
+                    if (aData.ordeR_STATUS == "REJECTED") {
+                        $('td:eq(5)', nRow).html('<b class="p-2" style="background-color: #dd4b39 !important;color:white !important;">COMPLETED</b>');
+                    }
+                },
+                "columnDefs": [
+                    { "width": "100%", "targets": [1] }
+                ],
+            });
+    }
+    function loadGraph(){
+        var monthsArr = []
+        var monthWiseDataArr = []
+        const ctx = document.getElementById("areaChart")
+        $.ajax({
+            url: '@Url.Action("getGraphData","Home")',
+            data: { year: new Date().getFullYear() },
+            success: function (data) {
+                console.log(data)
+                if (data.graphData.length == 0) {
+                    notify('error', 'No Earnings Found till yet!');
+                    return;
+                } else {
+                    for (var i = 0; i < data.graphData.length; i++) {
+                        monthsArr.push(data.graphData[i].month)
+                        monthWiseDataArr.push(data.graphData[i].earning)
+                    }
+
+                    const myChart = new Chart(ctx, {
+                        type: "bar",
+                        data: {
+                            labels: monthsArr,
+                            datasets: [
+                                {
+                                    label: "Monthly Graph for Year " + data.graphData[0].year,
+                                    data: monthWiseDataArr,
+                                    backgroundColor: [
+                                        "rgba(255, 99, 132, 0.2)",
+                                        "rgba(54, 162, 235, 0.2)"
+
+                                    ],
+                                    borderColor: [
+                                        "rgba(255, 99, 132, 1)",
+                                        "rgba(54, 162, 235, 1)"
+                                    ],
+                                    borderWidth: 1,
+                                },
+                            ],
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                },
+                            },
+                        },
+                    });
+                }
+            }
+        })
+    }
+
+
     </script>

@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Dapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using WeCharge.BAL.Services.Implementation;
 using WeCharge.BAL.Services.Interface;
@@ -25,8 +27,15 @@ namespace WeCharge_AdminPanel.Controllers
         public async Task<IActionResult> Index()
         {
             var dashboardCountData = await _ordersServices.GetDashboardCount("wecharge.USP_GET_DASHBOARD_COUNT", null).ConfigureAwait(true);
-
+            
             return View(dashboardCountData);
+        }
+        public async Task<JsonResult> getGraphData(string year)
+        {
+            DynamicParameters cParameters = new DynamicParameters();
+            cParameters.Add("@YEAR", year);
+            var graphData = await _ordersServices.GetGraphDataForEarnings("wecharge.USP_GET_EARNING_GRAPH_DATA_ADMIN_PANEL", cParameters).ConfigureAwait(true);
+            return new JsonResult(new { graphData });
         }
 
         public IActionResult Privacy()

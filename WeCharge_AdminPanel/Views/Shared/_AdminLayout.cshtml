@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="~/dist/css/datatables/jquery.dataTables.min.css">
     <link rel="stylesheet" href="~/dist/css/select2/select2.min.css">
     <link rel="stylesheet" href="~/plugins/sweet-alert/sweetalert.css">
+    <link rel="stylesheet" href="~/dist/css/datatable-modified-css.css">
 
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="sidebar-mini control-sidebar-slide-close layout-fixed">
 <div class="wrapper">
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -100,14 +101,14 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: rgb(255,183,0);background: linear-gradient(192deg, rgba(255,183,0,1) 30%, rgba(164,120,5,1) 69%);">
     <!-- Brand Logo -->
     <a href="@Url.Action("Index","Home")" class="brand-link">
-      <img src="~/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="https://wecharge.co.in/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light" style="color:black !important;">WeCharge</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="user-panel mt-1 pb-1 mb-1 d-flex">
         <div class="image">
         </div>
         <div class="info">
@@ -138,6 +139,110 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+              <i class="nav-icon fas fa-user-alt"></i>
+              <p>
+                Vendors
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","Vendors")' class="nav-link" style='color:black !important;'>
+                  <i class="fa fa-list nav-icon"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                City
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","City")' class="nav-link" style='color:black !important;'>
+                  <i class="fa fa-list nav-icon"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                Delivery Boy
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","DeliveryBoy")' class="nav-link" style='color:black !important;'>
+                    <i class="nav-icon fa fa-solid fa-truck"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                 Coupons
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","Coupan")' class="nav-link" style='color:black !important;'>
+                    <i class="nav-icon fa fa-solid fa-truck"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                 Notifications
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","Notification")' class="nav-link" style='color:black !important;'>
+                    <i class="nav-icon fa fa-solid fa-truck"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                 Banner
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","Banner")' class="nav-link" style='color:black !important;'>
+                    <i class="nav-icon fa fa-solid fa-truck"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+           
           <li class="nav-item">
             <a href="#" class="nav-link" style='color:black !important;'>
               <i class="fa fa-sitemap"></i>   
@@ -189,6 +294,24 @@
               </li>
             </ul>
           </li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                 Vehicles
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","Vehicle")' class="nav-link" style='color:black !important;'>
+                    <i class="nav-icon fa fa-solid fa-truck"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
            <li class="nav-item">
             <a href="#" class="nav-link" style='color:black !important;'>
                 <i class="fa fa-solid fa-clock"></i>              
@@ -235,6 +358,23 @@
               <li class="nav-item">
                 <a href='@Url.Action("Index","Feedback")' class="nav-link" style='color:black !important;'>
                   <i class="fa fa-list nav-icon"></i>
+                  <p>View</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style='color:black !important;'>
+                <i class="nav-icon fa fa-solid fa-city"></i>
+              <p>
+                 FAQ
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href='@Url.Action("Index","FAQ")' class="nav-link" style='color:black !important;'>
+                    <i class="nav-icon fa fa-solid fa-truck"></i>
                   <p>View</p>
                 </a>
               </li>
@@ -300,14 +440,14 @@
 <script src="~/plugins/jquery/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script src="~/dist/js/adminlte.js"></script>
+
 <!-- Bootstrap -->
 <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
-<script src="~/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="~/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="~/dist/js/pages/dashboard3.js"></script>
 <script src="~/dist/js/datatables/jquery.dataTables.min.js"></script>
 <script src="~/dist/js/select2/select2.min.js"></script>
 <script src="~/plugins/sweet-alert/sweetalert.js"></script>

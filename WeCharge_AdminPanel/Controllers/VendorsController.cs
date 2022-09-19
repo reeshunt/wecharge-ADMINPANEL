@@ -6,6 +6,7 @@ using System.Linq;
 using AutoMapper;
 using WeCharge.Model;
 using Microsoft.DotNet.MSIdentity.Shared;
+using WeCharge.Model.DTO;
 
 namespace WeCharge_AdminPanel.Controllers
 {

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 using WeCharge.BAL.Services.Implementation;
 using WeCharge.Model;
+using WeCharge.Model.DTO;
 using WeCharge_AdminPanel.Models;
 
 namespace WeCharge_AdminPanel.Controllers

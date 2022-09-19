@@ -3,9 +3,12 @@
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
 @model Assets
-
+@{
+    var existingId = Model.ID;
+    
+}
 <div class="content">
-   <div class="container-fluid">
+    <div class="container-fluid">
          <div class="card-header">
             <h3 class="card-title"><b>Add New Asset<b></h3>
          </div>

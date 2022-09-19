@@ -17,13 +17,16 @@ namespace WeCharge.BAL.Services.Interface
         private readonly IRepository<Orders> _repository;
         private readonly IRepository<OrderId> _repository1;
         private readonly IRepository<DashboardCountDTO> _dashboardrepository;
+        private readonly IRepository<EarningGraphDataDTOs> _graphrepository;
 
-        public OrdersServices(IRepository<OrdersDTO> viewrepository, IRepository<OrderId> repository1, IRepository<Orders> repository, IRepository<DashboardCountDTO> dashboardRepository)
+        public OrdersServices(IRepository<OrdersDTO> viewrepository, IRepository<OrderId> repository1, IRepository<Orders> repository, IRepository<DashboardCountDTO> dashboardRepository,
+            IRepository<EarningGraphDataDTOs> graphRepository)
         {
             _repository1 = repository1;
             _repository = repository;
             _viewrepository = viewrepository;
             _dashboardrepository = dashboardRepository;
+            _graphrepository = graphRepository;
         }
 
         public async Task<IEnumerable<OrdersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param)
@@ -33,6 +36,10 @@ namespace WeCharge.BAL.Services.Interface
         public async Task<DashboardCountDTO> GetDashboardCount(string procedureName, DynamicParameters param)
         {
             return await _dashboardrepository.GetByQuery(procedureName, param);
+        }
+        public async Task<IEnumerable<EarningGraphDataDTOs>> GetGraphDataForEarnings(string procedureName, DynamicParameters param)
+        {
+            return await _graphrepository.GetAllByQuery(procedureName, param);
         }
 
         public async Task<List<OrderId>> GetAllOrderId()

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.CompilerServices;
 using WeCharge.BAL.Services.Implementation;
 using WeCharge.BAL.Services.Interface;
 using WeCharge.Model;
@@ -36,8 +37,7 @@ namespace WeCharge_AdminPanel.Controllers
             try
             {
                 var UserList = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_Users_Customers", null);
-                var Users = UserList.ToList().Select(x=>new Users {ID = x.ID,EMAIL = x.EMAIL}).Distinct(); 
-                ViewBag.Users = Users;
+                ViewBag.Users = UserList;
 
                 ViewBag.VendorName = await _accountServices.GetDisplayByQuerry("wecharge.USP_Get_ActiveVendors", null);
                 ViewBag.Fuel = await _reserveServices.GetAllFuel();
@@ -200,9 +200,11 @@ namespace WeCharge_AdminPanel.Controllers
             try
             {
                 var myParams = new DynamicParameters();
-                myParams.Add("@skip", param.iDisplayStart);
-                myParams.Add("@take", param.iDisplayLength);
-                myParams.Add("@search_key", param.sSearch);
+                myParams.Add("@skip", 0);
+                myParams.Add("@take", 10);
+                myParams.Add("@search_key", "");
+                myParams.Add("@vendorId", 0);
+                myParams.Add("@status", "");
                 var displayResult = await _ordersServices.GetDisplayByQuerry("wecharge.USP_GetORDERS_Datatable", myParams).ConfigureAwait(true);
                 foreach (var item in displayResult)
                 {

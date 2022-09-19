@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U/MpKfwQ0v3KWDELrUYkrZK1NmAHzcc9qqgUwOIVq7o=",
+  "Hash": "VUjw6pc//ydILYklCy4NLxUJ/DkavdDJsMLz0NAQz9o=",
   "Source": "WeCharge_AdminPanel",
   "BasePath": "_content/WeCharge_AdminPanel",
   "Mode": "Default",
@@ -525,6 +525,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dist\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\dist\\css\\datatable-modified-css.css",
+      "SourceId": "WeCharge_AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\",
+      "BasePath": "_content/WeCharge_AdminPanel",
+      "RelativePath": "dist/css/datatable-modified-css.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\dist\\css\\datatable-modified-css.css"
     },
     {
       "Identity": "C:\\Users\\rees\\Desktop\\WeCharge-AdminPanelSourceCode\\WeCharge_Admin\\WeCharge_AdminPanel\\wwwroot\\dist\\css\\datatables\\jquery.dataTables.min.css",

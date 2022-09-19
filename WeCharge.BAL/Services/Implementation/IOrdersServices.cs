@@ -13,6 +13,7 @@ namespace WeCharge.BAL.Services.Implementation
     {
         Task<IEnumerable<OrdersDTO>> GetDisplayByQuerry(string procedureName, DynamicParameters param);
         Task<DashboardCountDTO> GetDashboardCount(string procedureName, DynamicParameters param);
+        Task<IEnumerable<EarningGraphDataDTOs>> GetGraphDataForEarnings(string procedureName, DynamicParameters param);
         Task<int> AddOrder(Orders orders);
         Task<List<OrderId>> GetAllOrderId();
         Task<int> AddOrderId(OrderId orderId);
