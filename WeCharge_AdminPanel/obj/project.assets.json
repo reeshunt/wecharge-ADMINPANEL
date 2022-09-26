@@ -9859,40 +9859,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rees\\.nuget\\packages\\": {}
+    "/Users/rees/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
+      "projectUniqueName": "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge_AdminPanel/WeCharge_AdminPanel.csproj",
       "projectName": "WeCharge_AdminPanel",
-      "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\WeCharge_AdminPanel.csproj",
-      "packagesPath": "C:\\Users\\rees\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge_AdminPanel\\obj\\",
+      "projectPath": "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge_AdminPanel/WeCharge_AdminPanel.csproj",
+      "packagesPath": "/Users/rees/.nuget/packages/",
+      "outputPath": "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge_AdminPanel/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rees\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/rees/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj": {
-              "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.BAL\\WeCharge.BAL.csproj"
+            "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge.BAL/WeCharge.BAL.csproj": {
+              "projectPath": "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge.BAL/WeCharge.BAL.csproj"
             },
-            "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj": {
-              "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.DAL\\WeCharge.DAL.csproj"
+            "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge.DAL/WeCharge.DAL.csproj": {
+              "projectPath": "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge.DAL/WeCharge.DAL.csproj"
             },
-            "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj": {
-              "projectPath": "C:\\Users\\rees\\source\\repos\\Tech-Automations\\WeCharge_Admin\\WeCharge.Model\\WeCharge.Model.csproj"
+            "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge.Model/WeCharge.Model.csproj": {
+              "projectPath": "/Users/rees/Desktop/wecharge-ADMINPANEL/WeCharge.Model/WeCharge.Model.csproj"
             }
           }
         }
@@ -9955,7 +9953,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
